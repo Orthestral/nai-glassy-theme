@@ -1,0 +1,120 @@
+div.ProseMirror {
+    padding-right: 2px;
+}
+/*
+.userText, .editText, .aiText, .promptText, .ProseMirror {
+    font-family: "Inter" !important;
+}
+*/
+#app {
+    background-image: url(https://cdn.discordapp.com/attachments/439558316860112928/929855282924912710/unknown.png);
+    background-size: repeat scroll 0% 0%;
+    background-position: center;
+}
+
+.menubar, .sc-97586b15-1, .sc-6e3400d3-2, .hVigqJ {
+    border: none !important;
+}
+
+/* BG of all main panels */
+.menubar, .infobar, .conversation, .modal {
+    background-color: #0c0c1088 !important;
+    backdrop-filter: blur(20px) !important;
+    border: none !important;
+}
+
+/* Main BG of the buttons and areas */
+.sidebar-story-card, .conversation-input-container, button:not(.hFyCgi, .eaqrbg, .kvcUKV>button), .sc-b81eedda-24, .sc-a332c1f5-13,
+.sc-a332c1f5-14, .sc-b9641206-13, .fXJbUe, .hEOYdk, .bPnzoh, .ProseMirror-focused, .sc-b9641206-6, .ePRCew, .lorebook-inserted-text,
+.bFCAzw, .sc-b9641206-23.gJgxWQ, .sc-b9641206-28, .slider, .sc-355577aa-0, .sc-355577aa-6, .sc-8c2ab39c-0, .SUYfl, .icVZVb, .kvcUKV, .kYXti {
+    background-color: #0a0a1055 !important;
+    border: none !important;
+    outline: none !important;
+    border-radius: 5px;
+}
+
+/* Hide these backgrounds */
+.sc-6e3400d3-2, input:not(.slider), textarea:not(.lorebook-inserted-text, .jZGKex), .eaqrbg:not(.sc-b81eedda-24, .sc-a332c1f5-13,
+.sc-91c5eb75-1), .sidebar-story-card, .conversation-title, .sc-a332c1f5-8, .sc-a332c1f5-9, .modal-overlay, .module-trainer, .eWFXcS,
+.lorebook, .crqYqD, .sc-355577aa-1, .sc-355577aa-6>button, .sc-7ca6105f-2, .sc-7ca6105f-11, .iFMQCK, .duZygn, .kThJDB, .kvcUKV>button,
+.gwBTif, .bpNlXd, .bOSHwH, .dfszxd, .gTlsYL, .UIcQG, .dxuLuJ, .qAXlp, .sc-b9641206-23.gJgxWQ {
+    background: transparent !important;
+    background-color: #00000000 !important;
+    border: none !important;
+}
+
+.sc-a332c1f5-13, .sc-b9641206-13 {
+    margin-bottom: 5px !important;
+}
+.fjkLGF {
+    margin: 5px 5px 0 !important;
+    width: 97% !important;
+}
+
+/* Delete button */
+.hFyCgi {
+    background: rgba(255, 165, 165, 0.67) !important;
+    border-radius: 5px;
+}
+
+/* Main BG without rounded cornera */
+.gPkugH {
+    background-color: #0a0a1055 !important;
+}
+
+.ePRCew, .fRyuTT {
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+}
+
+/* Faint border around story area */
+.conversation-main {
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 5px;
+}
+
+/* Fix import button*/
+.jlXbEA {
+    color: #c2d5ff !important;
+}
+.ifGSgv {
+    background-color: #c2d5ff !important;
+}
+
+/* Round borders of center windows */
+.conversation, .modal {
+    border-radius: 15px;
+}
+
+/* Shrink and center input/story area */
+.conversation {
+    max-width: 60em !important;
+    max-height: 90% !important;
+    bottom: -50px;
+    padding: 10px 15px 15px 15px !important;
+}
+
+/* Tabs */
+.cefGrZ>div, .jCLruH, .jZGKex, .dxcIUw {
+    background-color: #0a0a1055 !important;
+    border: none !important;
+    outline: none !important;
+}
+.cefGrZ>div:hover {
+    background-color: #0a0a1077 !important;
+}
+.cefGrZ>div:first-child {
+    border-radius: 5px 0 0 5px;
+}
+.cefGrZ>div:last-child {
+    border-radius: 0 5px 5px 0;
+}
+.jCLruH, .eBGoHy {
+    border-radius: 5px 5px 0 0;
+}
+.jZGKex, .dxcIUw {
+    border-radius: 0 5px 5px 5px;
+}
+button.jCLruH, .cefGrZ>.jPPhgP {
+    background-color: #0a0a1088 !important;
+}
