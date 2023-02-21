@@ -1,117 +1,184 @@
-/*
-.userText, .editText, .aiText, .promptText, .ProseMirror {
-    font-family: "Inter" !important;
+/* All elements */ * {
+    border: none !important;
+    outline: none !important;
 }
-*/
-#app {
+
+/* Background */ #app {
     background-image: url(https://cdn.discordapp.com/attachments/439558316860112928/929855282924912710/unknown.png);
-    background-size: repeat scroll 0% 0%;
+    background-size: cover;
     background-position: center;
 }
 
-.menubar, .sc-97586b15-1, .sc-6e3400d3-2, .hVigqJ {
-    border: none !important;
-}
-
-/* BG of all main panels */
-.menubar, .infobar, .conversation, .modal {
+/* Left sidebar */ .menubar,
+/* Right sidebar */ .infobar,
+/* Conversation/story panel */.conversation,
+/* Module trainer modal */ .module-trainer {
     background-color: #0c0c1088 !important;
-    backdrop-filter: blur(20px) !important;
-    border: none !important;
+    backdrop-filter: blur(20px);
 }
 
-/* Main BG of the buttons and areas */
-.sidebar-story-card, .conversation-input-container, button:not(.hFyCgi, .eaqrbg, .kvcUKV>button), .sc-b81eedda-24, .sc-a332c1f5-13,
-.sc-a332c1f5-14, .sc-b9641206-13, .fXJbUe, .hEOYdk, .bPnzoh, .ProseMirror-focused, .sc-b9641206-6, .ePRCew, .lorebook-inserted-text,
-.bFCAzw, .sc-b9641206-23.gJgxWQ, .sc-b9641206-28, .slider, .sc-355577aa-0, .sc-355577aa-6, .sc-8c2ab39c-0, .SUYfl, .icVZVb, .kvcUKV, .kYXti {
-    background-color: #0a0a1055 !important;
-    border: none !important;
-    outline: none !important;
+/* Menubar story entry */ .sidebar-story-card,
+/* Editor V1 input */ .conversation-input-container,
+/* All buttons except for the following */ button:not(
+/* Menubar account dropdown */ .menubar > div:first-child > div:nth-child(2) > button,
+/* Menubar edit story button */ .sidebar-story-card > div:first-child > div:nth-child(3) > div > button,
+/* Menubar duplicate story button */ .sidebar-story-card > div:last-child > div:last-child > div > div > button,
+/* Menubar edit shelf button */ .menubar > div:nth-child(3) > div:first-child > div:last-child > button,
+/* Infobar add stop sequence */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(4) > div > div:last-child > div:first-child > div > button,
+/* Infobar add banned token */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(3) > div > div:last-child > div:first-child > div > div:last-child > div:first-child > button,
+/* Infobar add phrase bias */.infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(2) > div:last-child > div:first-child > div:last-child > div:first-child > button,
+/* Infobar Memory token count */ .memory-card > div:last-child > div > button,
+/* Infobar Author's note token count */ .an-card > div:last-child > div > button,
+/* Modal close button */ .modal-close,
+/* Menubar NovelAI logo */ .menubar > div:first-child > div:first-child > button
+),
+.ProseMirror-focused,
+.lorebook-inserted-text,
+/* Infobar phrase biases */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(2) > div:last-child > div:first-child > div:last-child,
+/* Infobar stop sequence input */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(4) > div > div:last-child > div:first-child > div,
+/* Infobar banned tokens */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(3) > div > div:last-child > div:first-child > div > div:last-child,
+/* Infobar banned token input */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(3) > div > div:last-child > div:first-child > div > div:last-child > div:first-child,
+/* Infobar phrase bias input */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(2) > div:last-child > div:first-child > div:last-child > div:first-child,
+/* Infobar memory textarea */ .memory-card > div:last-child > div,
+/* Infobar author's note textarea */ .an-card > div:last-child > div,
+.conversation-heading a,
+/* Hypebot container */ .comment-container {
+    background-color: #0a0a1055;
     border-radius: 5px;
 }
 
-/* Hide these backgrounds */
-.sc-6e3400d3-2, input:not(.slider), textarea:not(.lorebook-inserted-text, .jZGKex), .eaqrbg:not(.sc-b81eedda-24, .sc-a332c1f5-13,
-.sc-91c5eb75-1), .sidebar-story-card, .conversation-title, .sc-a332c1f5-8, .sc-a332c1f5-9, .modal-overlay, .module-trainer, .eWFXcS,
-.lorebook, .crqYqD, .sc-355577aa-1, .sc-355577aa-6>button, .sc-7ca6105f-2, .sc-7ca6105f-11, .iFMQCK, .duZygn, .kThJDB, .kvcUKV>button,
-.gwBTif, .bpNlXd, .bOSHwH, .dfszxd, .gTlsYL, .UIcQG, .dxuLuJ, .qAXlp, .sc-b9641206-23.gJgxWQ {
+/* New scenario cards */ .scenario-card {
+    background-color: #0a0a1055 !important;
+    border-radius: 5px;
+}
+
+/* Sliders */ .slider {
+    background: #0a0a1055 !important;
+}
+
+/* All inputs except for sliders */ input:not(.slider),
+/* All textareas except for ??? */ textarea:not(.lorebook-inserted-text),
+/* Menubar story entry */ .sidebar-story-card,
+/* Modal overlay */ .modal-overlay,
+/* Module trainer modal */ .module-trainer,
+/* Menubar story status */ .sidebar-story-card > div:nth-child(2),
+/* Menubar shelf/stories header */ .menubar > div:nth-child(3),
+/* Menubar open settings button */ .menubar > div:first-child > div:nth-child(2) > button,
+/* Import file button */ .import-file-button > div > button > div,
+/* New shelf button */ .new-shelf-button > button > div,
+/* New story button */ .new-story-button > button > div,
+/* Menubar edit story button */ .sidebar-story-card > div:first-child > div:nth-child(3) > div > button,
+/* Menubar duplicate story button */ .sidebar-story-card > div:last-child > div:last-child > div > div > button,
+/* Menubar edit shelf button */ .menubar > div:nth-child(3) > div:first-child > div:last-child > button,
+/* Infobar add stop sequence */.infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(4) > div > div:last-child > div:first-child > div > button,
+/* Infobar add banned token */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(3) > div > div:last-child > div:first-child > div > div:last-child > div:first-child > button,
+/* Infobar add phrase bias */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(2) > div:last-child > div:first-child > div:last-child > div:first-child > button,
+/* Editor hints */ .comment-tip > div,
+/* Editor V1 controls containers */ .conversation-controls-container > div:nth-child(3) .conversation-controls,
+/* Editor V2 controls containers */ .conversation-controls-container > div:nth-child(2) .conversation-controls,
+.conversation > div:nth-child(3) > div:last-child {
     background: transparent !important;
     background-color: #00000000 !important;
-    border: none !important;
 }
 
-.sc-a332c1f5-13, .sc-b9641206-13 {
-    margin-bottom: 5px !important;
-}
-.fjkLGF {
-    margin: 5px 5px 0 !important;
-    width: 97% !important;
+/* Module trainer modal */ .module-trainer {
+    background: rgb(21, 21, 21) !important;
 }
 
-/* Delete button */
-.hFyCgi {
-    background: rgba(255, 165, 165, 0.67) !important;
-    border-radius: 5px;
+/* Hypebot container */ .comment-container div {
+    background-color: #00000000;
 }
 
-/* Main BG without rounded cornera */
-.gPkugH {
-    background-color: #0a0a1055 !important;
-}
-
-.ePRCew, .fRyuTT {
-    margin-left: 5px !important;
-    margin-right: 5px !important;
-}
-
-/* Faint border around story area */
-.conversation-main {
+/* Story and controls */ .conversation-main {
     border: 1px solid rgba(255, 255, 255, 0.1) !important;
     border-radius: 5px;
 }
 
-/* Fix import button*/
-.jlXbEA {
-    color: #c2d5ff !important;
-}
-.ifGSgv {
-    background-color: #c2d5ff !important;
-}
-
-/* Round borders of center windows */
-.conversation, .modal {
+/* Conversation/story panel */.conversation,
+/* Modals */ .modal {
     border-radius: 15px;
 }
 
-/* Shrink and center input/story area */
-.conversation {
+/* Conversation/story panel */ .conversation {
     max-width: 60em !important;
     max-height: 90% !important;
-    bottom: -50px;
+    bottom: 50px;
     padding: 10px 15px 15px 15px !important;
 }
 
-/* Tabs */
-.cefGrZ>div, .jCLruH, .jZGKex, .dxcIUw {
+/* Story scrollbar */ ::-webkit-scrollbar-thumb,
+/* Infobar "Story" nav button */ .infobar > div:nth-child(2) > div:first-child > div,
+/* Menubar header */ .menubar > div:first-child,
+/* Select bg */ .select > div:nth-child(3),
+/* Infobar lorebook search */ .lorebook-access-card > div:last-child > div > div > div {
     background-color: #0a0a1055 !important;
-    border: none !important;
-    outline: none !important;
+    outline: none !important 
 }
-.cefGrZ>div:hover {
+
+/* Infobar 'Story' button (hovered) */ .infobar > div:nth-child(2) > div:first-child > div:hover,
+/* All buttons except for the following (hovered) */button:not(
+/* Menubar account dropdown */ .menubar > div:first-child > div:nth-child(2) > button,
+/* Menubar edit story button */ '.sidebar-story-card > div:first-child > div:nth-child(3) > div > button,
+/* Menubar duplicate story button */ .sidebar-story-card > div:last-child > div:last-child > div > div > button,
+/* Menubar edit shelf button */ .menubar > div:nth-child(3) > div:first-child > div:last-child > button,
+/* Infobar add stop sequence button */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(4) > div > div:last-child > div:first-child > div > button,
+/* Modal close button */ .modal-close,
+/* Delete story button */ .infobar > div:last-child > div:last-child > div:first-child > div > div > div:nth-child(10) > div:last-child > button,
+/* Delete story confirmation button */ .modal > div:nth-child(2) > div:nth-child(1) > button:nth-last-child(2),
+/* Delete shelf button */ .modal > div:first-child > div:nth-child(8) > button,
+/* Statistics modal destructive buttons */ .modal > div:first-child > div:nth-child(3) > div:first-child > div:nth-child(2) > div:nth-child(3) > div:first-child > div:nth-child(4) > button
+):hover {
     background-color: #0a0a1077 !important;
+    background: #0a0a1077 !important;
 }
-.cefGrZ>div:first-child {
-    border-radius: 5px 0 0 5px;
+
+/* Infobar "Story" nav button */ .infobar > div:nth-child(2) > div:first-child > div:first-child,
+/* Infobar export "To File" button */ .infobar-export > div > button:first-child,
+/* Infobar lorebook search */ .lorebook-access-card > div:last-child > div > div > div {
+    border-radius: 5px 0 0 5px !important;
 }
-.cefGrZ>div:last-child {
-    border-radius: 0 5px 5px 0;
+
+/* Infobar "Settings" nav button */ .infobar > div:nth-child(2) > div:first-child > div:last-child,
+/* Infobar delete phrase bias group button */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(2) > div:last-child > div:first-child > div:first-child > div:last-child > button:last-child,
+/* Infobar delete banned token group button */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(3) > div > div:last-child > div:first-child > div > div:first-child > div:last-child > button:last-child,
+/* Infobar export story dropdown button */ .infobar-export > div > button:last-child,
+/* Infobar open lorebook button */ .lorebook-access-card > div:last-child > div > div > button {
+    border-radius: 0 5px 5px 0 !important;
 }
-.jCLruH, .eBGoHy {
-    border-radius: 5px 5px 0 0;
+
+/* Infobar add phrase bias group button */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(2) > div:last-child > div:first-child > div:first-child > div:last-child > button:first-child,
+/* Infobar add banned token group button */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(3) > div > div:last-child > div:first-child > div > div:first-child > div:last-child > button:first-child {
+    border-radius: 0 !important;
 }
-.jZGKex, .dxcIUw {
-    border-radius: 0 5px 5px 5px;
+
+/* Settings nav buttons */ .settings-sidebar > div > button {
+    margin: 5px;
 }
-button.jCLruH, .cefGrZ>.jPPhgP {
-    background-color: #0a0a1088 !important;
+
+/* Delete story button */ .infobar > div:last-child > div:last-child > div:first-child > div > div > div:nth-child(10) > div:last-child > button,
+/* Delete story confirmation button */ .modal > div:nth-child(2) > div:nth-child(1) > button:nth-last-child(2),
+/* Delete shelf button */ .modal > div:first-child > div:nth-child(8) > button,
+/* Statistics modal destructive buttons */ .modal > div:first-child > div:nth-child(3) > div:first-child > div:nth-child(2) > div:nth-child(3) > div:first-child > div:nth-child(4) > button {
+    background-color: #FFA5A5 !important;
+}
+
+/* Infobar export "To File" button icon */ .infobar-export > div > button:first-child > div {
+    background-color: #c2d5ff;
+}
+
+/* Infobar export "To File" button text */ .infobar-export > div > button:first-child,
+/* Story scenario fill placeholders/start button */ .modal > div:first-child > div:first-child > div:last-child > div:last-child > button:last-child {
+    color: #c2d5ff;
+}
+
+/* Editor V1 controls containers */ .conversation-controls > div {
+    height: 80%;
+}
+
+/* Shelf icons */ .svg-color-bg1.svg-fill {
+    fill: #0a0a1077;
+}
+
+/* Shelf icons stroke */ .svg-color-textMain-20.svg-stroke {
+    stroke: #ffffff22;
 }
