@@ -33,7 +33,9 @@
 /* Menubar NovelAI logo */ .menubar > div:first-child > div:first-child > button,
 /* Infobar inport/export config presets */ .infobar > div:last-child > div:last-child > div:last-child > div > div > div:first-child > div:first-child > div:first-child > div:last-child > button,
 /* Infobar Generation Options toggle */ .infobar > div:last-child > div:last-child > div:last-child > div > div > div:nth-child(3) button,
-/* Infobar Advanced Options toggle */ .infobar > div:last-child > div:last-child > div:last-child > div > div > div:nth-child(5) button
+/* Infobar Advanced Options toggle */ .infobar > div:last-child > div:last-child > div:last-child > div > div > div:nth-child(5) button,
+/* Dashboard "Read More" button */ .conversation > div:last-child > div:first-child > div:first-child > div:last-child > div > button:last-child,
+/* Dashboard New Story and Import buttons */ .conversation > div:last-child > div:last-child > div > div:first-child > div:last-child > div > button
 ),
 .ProseMirror-focused,
 .lorebook-inserted-text,
@@ -79,7 +81,9 @@
 /* Editor hints */ .comment-tip > div,
 /* Editor V1 controls containers */ .conversation-controls-container > div:nth-child(3) .conversation-controls,
 /* Editor V2 controls containers */ .conversation-controls-container > div:nth-child(2) .conversation-controls,
-.conversation > div:nth-child(3) > div:last-child {
+.conversation > div:nth-child(3) > div:last-child,
+/* Whole Dashboard BG */ .conversation > div:last-child,
+/* Dashboard */ .conversation > div:last-child > div:last-child {
     background: transparent !important;
     background-color: #00000000 !important;
 }
@@ -133,7 +137,9 @@
 /* Menubar NovelAI logo */ .menubar > div:first-child > div:first-child > button,
 /* Infobar inport/export config presets */ .infobar > div:last-child > div:last-child > div:last-child > div > div > div:first-child > div:first-child > div:first-child > div:last-child > button,
 /* Infobar Generation Options toggle */ .infobar > div:last-child > div:last-child > div:last-child > div > div > div:nth-child(3) button,
-/* Infobar Advanced Options toggle */ .infobar > div:last-child > div:last-child > div:last-child > div > div > div:nth-child(5) button
+/* Infobar Advanced Options toggle */ .infobar > div:last-child > div:last-child > div:last-child > div > div > div:nth-child(5) button,
+/* Dashboard "Read More" button */ .conversation > div:last-child > div:first-child > div:first-child > div:last-child > div > button:last-child,
+/* Dashboard New Story and Import buttons */ .conversation > div:last-child > div:last-child > div > div:first-child > div:last-child > div > button
 ):hover {
     background-color: #0a0a1077 !important;
     background: #0a0a1077 !important;
