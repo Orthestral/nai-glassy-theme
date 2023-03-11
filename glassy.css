@@ -30,7 +30,10 @@
 /* Infobar Memory token count */ .memory-card > div:last-child > div > button,
 /* Infobar Author's note token count */ .an-card > div:last-child > div > button,
 /* Modal close button */ .modal-close,
-/* Menubar NovelAI logo */ .menubar > div:first-child > div:first-child > button
+/* Menubar NovelAI logo */ .menubar > div:first-child > div:first-child > button,
+/* Infobar inport/export config presets */ .infobar > div:last-child > div:last-child > div:last-child > div > div > div:first-child > div:first-child > div:first-child > div:last-child > button,
+/* Infobar Generation Options toggle */ .infobar > div:last-child > div:last-child > div:last-child > div > div > div:nth-child(3) button,
+/* Infobar Advanced Options toggle */ .infobar > div:last-child > div:last-child > div:last-child > div > div > div:nth-child(5) button
 ),
 .ProseMirror-focused,
 .lorebook-inserted-text,
@@ -126,7 +129,11 @@
 /* Delete story button */ .infobar > div:last-child > div:last-child > div:first-child > div > div > div:nth-child(10) > div:last-child > button,
 /* Delete story confirmation button */ .modal > div:nth-child(2) > div:nth-child(1) > button:nth-last-child(2),
 /* Delete shelf button */ .modal > div:first-child > div:nth-child(8) > button,
-/* Statistics modal destructive buttons */ .modal > div:first-child > div:nth-child(3) > div:first-child > div:nth-child(2) > div:nth-child(3) > div:first-child > div:nth-child(4) > button
+/* Statistics modal destructive buttons */ .modal > div:first-child > div:nth-child(3) > div:first-child > div:nth-child(2) > div:nth-child(3) > div:first-child > div:nth-child(4) > button,
+/* Menubar NovelAI logo */ .menubar > div:first-child > div:first-child > button,
+/* Infobar inport/export config presets */ .infobar > div:last-child > div:last-child > div:last-child > div > div > div:first-child > div:first-child > div:first-child > div:last-child > button,
+/* Infobar Generation Options toggle */ .infobar > div:last-child > div:last-child > div:last-child > div > div > div:nth-child(3) button,
+/* Infobar Advanced Options toggle */ .infobar > div:last-child > div:last-child > div:last-child > div > div > div:nth-child(5) button
 ):hover {
     background-color: #0a0a1077 !important;
     background: #0a0a1077 !important;
