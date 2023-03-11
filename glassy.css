@@ -11,7 +11,7 @@
 
 /* Left sidebar */ .menubar,
 /* Right sidebar */ .infobar,
-/* Conversation/story panel */.conversation,
+/* Conversation/story panel */ .conversation,
 /* Module trainer modal */ .module-trainer {
     background-color: #0c0c1088 !important;
     backdrop-filter: blur(20px);
@@ -26,7 +26,7 @@
 /* Menubar edit shelf button */ .menubar > div:nth-child(3) > div:first-child > div:last-child > button,
 /* Infobar add stop sequence */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(4) > div > div:last-child > div:first-child > div > button,
 /* Infobar add banned token */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(3) > div > div:last-child > div:first-child > div > div:last-child > div:first-child > button,
-/* Infobar add phrase bias */.infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(2) > div:last-child > div:first-child > div:last-child > div:first-child > button,
+/* Infobar add phrase bias */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(2) > div:last-child > div:first-child > div:last-child > div:first-child > button,
 /* Infobar Memory token count */ .memory-card > div:last-child > div > button,
 /* Infobar Author's note token count */ .an-card > div:last-child > div > button,
 /* Modal close button */ .modal-close,
@@ -116,9 +116,9 @@
 }
 
 /* Infobar 'Story' button (hovered) */ .infobar > div:nth-child(2) > div:first-child > div:hover,
-/* All buttons except for the following (hovered) */button:not(
+/* All buttons except for the following (hovered) */ button:not(
 /* Menubar account dropdown */ .menubar > div:first-child > div:nth-child(2) > button,
-/* Menubar edit story button */ '.sidebar-story-card > div:first-child > div:nth-child(3) > div > button,
+/* Menubar edit story button */ .sidebar-story-card > div:first-child > div:nth-child(3) > div > button,
 /* Menubar duplicate story button */ .sidebar-story-card > div:last-child > div:last-child > div > div > button,
 /* Menubar edit shelf button */ .menubar > div:nth-child(3) > div:first-child > div:last-child > button,
 /* Infobar add stop sequence button */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(4) > div > div:last-child > div:first-child > div > button,
