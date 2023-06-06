@@ -21,7 +21,7 @@
 }
 
 /* Menubar story entry */ .sidebar-story-card,
-/* Editor V1 input */ .conversation-input-container,
+/* Editor V1 input */ .conversation-input-container:not(.conversation-controls-container > div:last-child),
 /* All buttons except for the following */ button:not(
 /* Menubar account dropdown */ .menubar > div:first-child > div:nth-child(2) > button,
 /* Menubar edit story button */ .sidebar-story-card > div:first-child > div:nth-child(3) > div > button,
@@ -40,7 +40,8 @@
 /* Dashboard "Read More" button */ .conversation > div:last-child > div:first-child > div:first-child > div:last-child > div > button:last-child,
 /* Dashboard New Story and Import buttons */ .conversation > div:last-child > div:last-child > div > div:first-child > div:last-child > div > button,
 /* Image generator AI settings and "Generate" buttons */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:last-child button,
-/* Image gen img2img collapse button */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:last-child > div > div:first-child > div:nth-child(2) > button
+/* Image gen img2img collapse button */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:last-child > div > div:first-child > div:nth-child(2) > button,
+/* Image gen edit/inpaint save button */ #__next > div:last-child > div:nth-child(3) > div > div:first-child > div:last-child > button:nth-child(2)
 ),
 .ProseMirror-focused,
 .lorebook-inserted-text,
@@ -68,6 +69,12 @@
     border-radius: 5px;
 }
 
+/* Text adventure V2 input */ .conversation-input,
+/* Text adventure V1 context input */ .adventureInput,
+/* Text adventure V1 context input side */ .adventureInput::before,
+/* Text adventure V1 context output side */ .adventureStory::before,
+/* Text adventure V1 controls side */ .conversation-input-container::before,
+/* Text adventure V1 controls container */ .conversation-input-container > div,
 /* Sliders */ .slider {
     background: #0a0a1055 !important;
 }
@@ -93,11 +100,12 @@
 /* Infobar add banned token */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(3) > div > div:last-child > div:first-child > div > div:last-child > div:first-child > button,
 /* Infobar add phrase bias */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(2) > div:last-child > div:first-child > div:last-child > div:first-child > button,
 /* Editor hints */ .comment-tip > div,
-/* Editor V1 controls containers */ .conversation-controls-container > div:nth-child(3) .conversation-controls,
-/* Editor V2 controls containers */ .conversation-controls-container > div:nth-child(2) .conversation-controls,
+/* Editor V1 controls containers */ .conversation-controls-container > div:nth-child(3) > div:first-child,
+/* Editor V2 controls containers */ .conversation-controls-container > div:nth-child(2) > div:first-child,
 .conversation > div:nth-child(3) > div:last-child,
 /* Whole Dashboard BG */ .conversation > div:last-child,
 /* Dashboard */ .conversation > div:last-child > div:last-child,
+/* Text adventure V2 controls */ .conversation-controls,
 /* Image gen img2img control buttons container (inactive) */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:last-child > div > div:nth-child(2) > div,
 /* Image gen img2img control buttons container (active) */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:last-child > div > div:first-child > div:nth-child(2) > div,
 /* Image gen img2img action button containers */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:last-child > div > div:last-child > div,
@@ -173,8 +181,11 @@
 /* Infobar Advanced Options toggle */ .infobar > div:last-child > div:last-child > div:last-child > div > div > div:nth-child(5) button,
 /* Dashboard "Read More" button */ .conversation > div:last-child > div:first-child > div:first-child > div:last-child > div > button:last-child,
 /* Dashboard New Story and Import buttons */ .conversation > div:last-child > div:last-child > div > div:first-child > div:last-child > div > button,
+/* Lorebook delete entry button */ .lorebook-sidebar > div:nth-child(3) > div > div > div > div > button:first-child,
 /* Image generator AI settings and "Generate" buttons */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:last-child button,
-/* Image gen img2img collapse button */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:last-child > div > div:first-child > div:nth-child(2) > button
+/* Text adventure V2 switch button */ .conversation-input button,
+/* Image gen img2img collapse button */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:last-child > div > div:first-child > div:nth-child(2) > button,
+/* Image gen edit/inpaint save button */ #__next > div:last-child > div:nth-child(3) > div > div:first-child > div:last-child > button:nth-child(2)
 ):hover {
     background-color: #0a0a1077 !important;
     background: #0a0a1077 !important;
@@ -205,15 +216,16 @@
     margin: 5px;
 }
 
-/* Delete story button */ .infobar > div:last-child > div:last-child > div:first-child > div > div > div:nth-child(10) > div:last-child > button,
+/* Delete story button */ .infobar > div:last-child > div:last-child > div:first-child > div > div > div:nth-last-child(2) > div:last-child > button,
 /* Delete story confirmation button */ .modal > div:nth-child(2) > div:nth-child(1) > button:nth-last-child(2),
-/* Delete shelf button */ .modal > div:first-child > div:nth-child(8) > button,
+/* Delete shelf button */ .modal > div:first-child > div:nth-child(8) > button:last-child,
 /* Statistics modal destructive buttons */ .modal > div:first-child > div:nth-child(3) > div:first-child > div:nth-child(2) > div:nth-child(3) > div:first-child > div:nth-child(4) > button {
     background-color: #FFA5A5 !important;
 }
 
+/* Text adventure V2 switch button */ .conversation-input button,
 /* Infobar export "To File" button icon */ .infobar-export > div > button:first-child > div {
-    background-color: #c2d5ff;
+    background-color: #c2d5ff !important;
 }
 
 /* Infobar export "To File" button text */ .infobar-export > div > button:first-child,
