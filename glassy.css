@@ -55,7 +55,8 @@
 .conversation-heading a,
 /* Hypebot container */ .comment-container,
 /* Image gen resolution input */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:last-child > div > div:nth-child(2) > div:last-child,
-/* Image gen expanded seed input */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:last-child > div > div > div:last-child > div:first-child input {
+/* Image gen expanded seed input */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:last-child > div > div > div:last-child > div:first-child input,
+/* Instruct input */ .conversation .editor2 .ProseMirror > p[source="10"] {
     background-color: #0a0a1055;
     border-radius: 5px;
 }
@@ -110,7 +111,8 @@
 /* Image gen img2img control buttons container (active) */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:last-child > div > div:first-child > div:nth-child(2) > div,
 /* Image gen img2img action button containers */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:last-child > div > div:last-child > div,
 /* Image gen img2img inpaint button container */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:last-child > div > div:nth-child(2) > div:last-child > div,
-/* Image gen resolution swap button */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:last-child > div > div:nth-child(2) > div:last-child > button {
+/* Image gen resolution swap button */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:last-child > div > div:nth-child(2) > div:last-child > button,
+/* Instruct input (Before) */ .conversation .editor2 .ProseMirror > p[source="10"]::before {
     background: transparent !important;
     background-color: #00000000 !important;
 }
