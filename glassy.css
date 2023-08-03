@@ -23,33 +23,20 @@
 /* Menubar story entry */ .sidebar-story-card,
 /* Editor V1 input */ .conversation-input-container:not(.conversation-controls-container > div:last-child),
 /* All buttons except for the following */ button:not(
-/* Menubar account dropdown */ .menubar > div:first-child > div:nth-child(2) > button,
-/* Menubar edit story button */ .sidebar-story-card > div:first-child > div:nth-child(3) > div > button,
-/* Menubar duplicate story button */ .sidebar-story-card > div:last-child > div:last-child > div > div > button,
-/* Menubar edit shelf button */ .menubar > div:nth-child(3) > div:first-child > div:last-child > button,
-/* Infobar add stop sequence */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(4) > div > div:last-child > div:first-child > div > button,
 /* Infobar add banned token */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(3) > div > div:last-child > div:first-child > div > div:last-child > div:first-child > button,
 /* Infobar add phrase bias */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(2) > div:last-child > div:first-child > div:last-child > div:first-child > button,
 /* Infobar Memory token count */ .memory-card > div:last-child > div > button,
 /* Infobar Author's note token count */ .an-card > div:last-child > div > button,
-/* Modal close button */ .modal-close,
-/* Menubar NovelAI logo */ .menubar > div:first-child > div:first-child > button,
-/* Infobar inport/export config presets */ .infobar > div:last-child > div:last-child > div:last-child > div > div > div:first-child > div:first-child > div:first-child > div:last-child > button,
-/* Infobar Generation Options toggle */ .infobar > div:last-child > div:last-child > div:last-child > div > div > div:nth-child(3) button,
-/* Infobar Advanced Options toggle */ .infobar > div:last-child > div:last-child > div:last-child > div > div > div:nth-child(5) button,
-/* Dashboard "Read More" button */ .conversation > div:last-child > div:first-child > div:first-child > div:last-child > div > button:last-child,
-/* Dashboard New Story and Import buttons */ .conversation > div:last-child > div:last-child > div > div:first-child > div:last-child > div > button,
 /* Image generator AI settings and "Generate" buttons */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:last-child button,
-/* Image gen img2img collapse button */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:last-child > div > div:first-child > div:nth-child(2) > button,
 /* Image gen edit/inpaint save button */ #__next > div:last-child > div:nth-child(3) > div > div:first-child > div:last-child > button:nth-child(2)
 ),
 .ProseMirror-focused,
 .lorebook-inserted-text,
-/* Infobar phrase biases */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(2) > div:last-child > div:first-child > div:last-child,
+/* Infobar phrase biases */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(2) > div:last-child > div:first-child > div:nth-child(3),
 /* Infobar stop sequence input */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(4) > div > div:last-child > div:first-child > div,
-/* Infobar banned tokens */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(3) > div > div:last-child > div:first-child > div > div:last-child,
-/* Infobar banned token input */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(3) > div > div:last-child > div:first-child > div > div:last-child > div:first-child,
-/* Infobar phrase bias input */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(2) > div:last-child > div:first-child > div:last-child > div:first-child,
+/* Infobar banned tokens */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(3) > div > div:last-child > div:first-child > div > div:nth-child(3),
+/* Infobar banned token input */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(3) > div > div:last-child > div:first-child > div > div:nth-child(3) > div:first-child,
+/* Infobar phrase bias input */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(2) > div:last-child > div:first-child > div:nth-child(3) > div:first-child,
 /* Infobar memory textarea */ .memory-card > div:last-child > div,
 /* Infobar author's note textarea */ .an-card > div:last-child > div,
 .conversation-heading a,
@@ -78,43 +65,6 @@
 /* Text adventure V1 controls container */ .conversation-input-container > div,
 /* Sliders */ .slider {
     background: #0a0a1055 !important;
-}
-
-/* All inputs except for */ input:not(
-/* All sliders */ .slider,
-/* Image gen expanded seed input */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:last-child > div > div > div:last-child > div:first-child input
-),
-/* All textareas except for ??? */ textarea:not(.lorebook-inserted-text),
-/* Menubar story entry */ .sidebar-story-card,
-/* Modal overlay */ .modal-overlay,
-/* Module trainer modal */ .module-trainer,
-/* Menubar story status */ .sidebar-story-card > div:nth-child(2),
-/* Menubar shelf/stories header */ .menubar > div:nth-child(3),
-/* Menubar open settings button */ .menubar > div:first-child > div:nth-child(2) > button,
-/* Import file button */ .import-file-button > div > button > div,
-/* New shelf button */ .new-shelf-button > button > div,
-/* New story button */ .new-story-button > button > div,
-/* Menubar edit story button */ .sidebar-story-card > div:first-child > div:nth-child(3) > div > button,
-/* Menubar duplicate story button */ .sidebar-story-card > div:last-child > div:last-child > div > div > button,
-/* Menubar edit shelf button */ .menubar > div:nth-child(3) > div:first-child > div:last-child > button,
-/* Infobar add stop sequence */.infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(4) > div > div:last-child > div:first-child > div > button,
-/* Infobar add banned token */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(3) > div > div:last-child > div:first-child > div > div:last-child > div:first-child > button,
-/* Infobar add phrase bias */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(2) > div:last-child > div:first-child > div:last-child > div:first-child > button,
-/* Editor hints */ .comment-tip > div,
-/* Editor V1 controls containers */ .conversation-controls-container > div:nth-child(3) > div:first-child,
-/* Editor V2 controls containers */ .conversation-controls-container > div:nth-child(2) > div:first-child,
-.conversation > div:nth-child(3) > div:last-child,
-/* Whole Dashboard BG */ .conversation > div:last-child,
-/* Dashboard */ .conversation > div:last-child > div:last-child,
-/* Text adventure V2 controls */ .conversation-controls,
-/* Image gen img2img control buttons container (inactive) */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:last-child > div > div:nth-child(2) > div,
-/* Image gen img2img control buttons container (active) */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:last-child > div > div:first-child > div:nth-child(2) > div,
-/* Image gen img2img action button containers */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:last-child > div > div:last-child > div,
-/* Image gen img2img inpaint button container */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:last-child > div > div:nth-child(2) > div:last-child > div,
-/* Image gen resolution swap button */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:last-child > div > div:nth-child(2) > div:last-child > button,
-/* Instruct input (Before) */ .conversation .editor2 .ProseMirror > p[source="10"]::before {
-    background: transparent !important;
-    background-color: #00000000 !important;
 }
 
 /* Module trainer modal */ .module-trainer {
@@ -167,30 +117,65 @@
 
 /* Infobar 'Story' button (hovered) */ .infobar > div:nth-child(2) > div:first-child > div:hover,
 /* All buttons except for the following (hovered) */ button:not(
+/* Statistics modal destructive buttons */ .modal > div:first-child > div:nth-child(3) > div:first-child > div:nth-child(2) > div:nth-child(3) > div:first-child > div:nth-child(4) > button,
+/* Lorebook delete entry button */ .lorebook-sidebar > div:nth-child(3) > div > div > div > div > button:first-child,
+/* Image generator AI settings and "Generate" buttons */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:last-child button,
+/* Text adventure V2 switch button */ .conversation-input button,
+/* Image gen edit/inpaint save button */ #__next > div:last-child > div:nth-child(3) > div > div:first-child > div:last-child > button:nth-child(2)
+):hover {
+    background-color: #0a0a1077;
+    background: #0a0a1077;
+}
+
+/* All inputs except for */ input:not(
+/* All sliders */ .slider,
+/* Image gen expanded seed input */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:last-child > div > div > div:last-child > div:first-child input
+),
 /* Menubar account dropdown */ .menubar > div:first-child > div:nth-child(2) > button,
 /* Menubar edit story button */ .sidebar-story-card > div:first-child > div:nth-child(3) > div > button,
 /* Menubar duplicate story button */ .sidebar-story-card > div:last-child > div:last-child > div > div > button,
 /* Menubar edit shelf button */ .menubar > div:nth-child(3) > div:first-child > div:last-child > button,
-/* Infobar add stop sequence button */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(4) > div > div:last-child > div:first-child > div > button,
+/* Infobar add stop sequence */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(4) > div > div:last-child > div:first-child > div > button,
 /* Modal close button */ .modal-close,
-/* Delete story button */ .infobar > div:last-child > div:last-child > div:first-child > div > div > div:nth-child(10) > div:last-child > button,
-/* Delete story confirmation button */ .modal > div:nth-child(2) > div:nth-child(1) > button:nth-last-child(2),
-/* Delete shelf button */ .modal > div:first-child > div:nth-child(8) > button,
-/* Statistics modal destructive buttons */ .modal > div:first-child > div:nth-child(3) > div:first-child > div:nth-child(2) > div:nth-child(3) > div:first-child > div:nth-child(4) > button,
 /* Menubar NovelAI logo */ .menubar > div:first-child > div:first-child > button,
 /* Infobar inport/export config presets */ .infobar > div:last-child > div:last-child > div:last-child > div > div > div:first-child > div:first-child > div:first-child > div:last-child > button,
 /* Infobar Generation Options toggle */ .infobar > div:last-child > div:last-child > div:last-child > div > div > div:nth-child(3) button,
 /* Infobar Advanced Options toggle */ .infobar > div:last-child > div:last-child > div:last-child > div > div > div:nth-child(5) button,
 /* Dashboard "Read More" button */ .conversation > div:last-child > div:first-child > div:first-child > div:last-child > div > button:last-child,
 /* Dashboard New Story and Import buttons */ .conversation > div:last-child > div:last-child > div > div:first-child > div:last-child > div > button,
-/* Lorebook delete entry button */ .lorebook-sidebar > div:nth-child(3) > div > div > div > div > button:first-child,
-/* Image generator AI settings and "Generate" buttons */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:last-child button,
-/* Text adventure V2 switch button */ .conversation-input button,
 /* Image gen img2img collapse button */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:last-child > div > div:first-child > div:nth-child(2) > button,
-/* Image gen edit/inpaint save button */ #__next > div:last-child > div:nth-child(3) > div > div:first-child > div:last-child > button:nth-child(2)
-):hover {
-    background-color: #0a0a1077 !important;
-    background: #0a0a1077 !important;
+/* All textareas except for ??? */ textarea:not(.lorebook-inserted-text),
+/* Menubar story entry */ .sidebar-story-card,
+/* Modal overlay */ .modal-overlay,
+/* Module trainer modal */ .module-trainer,
+/* Menubar story status */ .sidebar-story-card > div:nth-child(2),
+/* Menubar shelf/stories header */ .menubar > div:nth-child(3),
+/* Menubar open settings button */ .menubar > div:first-child > div:nth-child(2) > button,
+/* Import file button */ .import-file-button > div > button > div,
+/* New shelf button */ .new-shelf-button > button > div,
+/* New story button */ .new-story-button > button > div,
+/* Menubar edit story button */ .sidebar-story-card > div:first-child > div:nth-child(3) > div > button,
+/* Menubar duplicate story button */ .sidebar-story-card > div:last-child > div:last-child > div > div > button,
+/* Menubar edit shelf button */ .menubar > div:nth-child(3) > div:first-child > div:last-child > button,
+/* Infobar add stop sequence */.infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(4) > div > div:last-child > div:first-child > div > button,
+/* Infobar add banned token */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(3) > div > div:last-child > div:first-child > div > div:last-child > div:first-child > button,
+/* Infobar add phrase bias */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(2) > div:last-child > div:first-child > div:last-child > div:first-child > button,
+/* Editor hints */ .comment-tip > div,
+/* Editor V1 controls containers */ .conversation-controls-container > div:nth-child(3) > div:first-child,
+/* Editor V2 controls containers */ .conversation-controls-container > div:nth-child(2) > div:first-child,
+.conversation > div:nth-child(3) > div:last-child,
+/* Whole Dashboard BG */ .conversation > div:last-child,
+/* Dashboard */ .conversation > div:last-child > div:last-child,
+/* Text adventure V2 controls */ .conversation-controls,
+/* Image gen img2img control buttons container (inactive) */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:last-child > div > div:nth-child(2) > div,
+/* Image gen img2img control buttons container (active) */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:last-child > div > div:first-child > div:nth-child(2) > div,
+/* Image gen img2img action button containers */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:last-child > div > div:last-child > div,
+/* Image gen img2img inpaint button container */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:last-child > div > div:nth-child(2) > div:last-child > div,
+/* Image gen resolution swap button */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:last-child > div > div:nth-child(2) > div:last-child > button,
+/* Instruct input (Before) */ .conversation .editor2 .ProseMirror > p[source="10"]::before,
+/* Opposing prompt textarea */ .infobar > div:last-child  > div:last-child > div:last-child > div > div > div:last-child > button {
+    background: transparent !important;
+    background-color: #00000000 !important;
 }
 
 /* Infobar "Story" nav button */ .infobar > div:nth-child(2) > div:first-child > div:first-child,
