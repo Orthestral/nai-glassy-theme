@@ -173,7 +173,8 @@
 /* Image gen img2img inpaint button container */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:last-child > div > div:nth-child(2) > div:last-child > div,
 /* Image gen resolution swap button */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:last-child > div > div:nth-child(2) > div:last-child > button,
 /* Instruct input (Before) */ .conversation .editor2 .ProseMirror > p[source="10"]::before,
-/* Opposing prompt textarea */ .infobar > div:last-child  > div:last-child > div:last-child > div > div > div:last-child > button {
+/* Opposing prompt textarea */ .infobar > div:last-child  > div:last-child > div:last-child > div > div > div:last-child > button,
+/* Story searchbar */ .tts-controls > div:nth-last-child(2) button {
     background: transparent !important;
     background-color: #00000000 !important;
 }
@@ -230,4 +231,12 @@
 
 /* Shelf icons stroke */ .svg-color-textMain-20.svg-stroke {
     stroke: #ffffff22;
+}
+
+/* Story searchbar */ .tts-controls > div:nth-last-child(2),
+/* Menubar shelf searchbar */ .menubar > div:nth-child(3) > div:first-child > div:nth-child(3) {
+    background-color: #191922;
+    background: #191922;
+    opacity: 1;
+    border-radius: 5px;
 }
