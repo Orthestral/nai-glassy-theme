@@ -30,7 +30,8 @@
 /* Image generator AI settings and "Generate" buttons */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:last-child button,
 /* Image gen edit/inpaint save button */ #__next > div:last-child > div:nth-child(3) > div > div:first-child > div:last-child > button:nth-child(2),
 /* Lorebook update category defaults button */ .lorebook-content > div > div:last-child > div > div:last-child > button,
-/* Lorebook category subcontext reset to default button */ .lorebook-content > div > div:last-child > div > div:last-child > div:nth-last-child(3) > button:last-child
+/* Lorebook category subcontext reset to default button */ .lorebook-content > div > div:last-child > div > div:last-child > div:nth-last-child(3) > button:last-child,
+/* Import scenario button */ .modal-large > div > div:last-child > div > button
 ),
 .ProseMirror-focused,
 .lorebook-inserted-text,
@@ -124,7 +125,8 @@
 /* Text adventure V2 switch button */ .conversation-input button,
 /* Image gen edit/inpaint save button */ #__next > div:last-child > div:nth-child(3) > div > div:first-child > div:last-child > button:nth-child(2),
 /* Lorebook update category defaults button */ .lorebook-content > div > div:last-child > div > div:last-child > button,
-/* Lorebook category subcontext reset to default button */ .lorebook-content > div > div:last-child > div > div:last-child > div:nth-last-child(3) > button:last-child
+/* Lorebook category subcontext reset to default button */ .lorebook-content > div > div:last-child > div > div:last-child > div:nth-last-child(3) > button:last-child,
+/* Import scenario button */ .modal-large > div > div:last-child > div > button
 ):hover {
     background-color: #0a0a1077;
     background: #0a0a1077;
@@ -217,7 +219,9 @@
 }
 
 /* Text adventure V2 switch button */ .conversation-input button,
-/* Infobar export "To File" button icon */ .infobar-export > div > button:first-child > div {
+/* Infobar export "To File" button icon */ .infobar-export > div > button:first-child > div,
+/* Regular modal close buttons */ .modal-header .modal-close,
+/* Compact modal close buttons */ .modal-compact > div > div:first-child > button {
     background-color: #c2d5ff !important;
 }
 
