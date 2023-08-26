@@ -65,7 +65,7 @@
 /* Text adventure V1 context input side */ .adventureInput::before,
 /* Text adventure V1 context output side */ .adventureStory::before,
 /* Text adventure V1 controls side */ .conversation-input-container::before,
-/* Text adventure V1 controls container */ .conversation-input-container > div,
+/* Text adventure V1 controls container */ .conversation-input-container > div:first-child,
 /* Sliders */ .slider {
     background: #0a0a1055 !important;
 }
@@ -228,6 +228,14 @@
 /* Infobar export "To File" button text */ .infobar-export > div > button:first-child,
 /* Story scenario fill placeholders/start button */ .modal > div:first-child > div:first-child > div:last-child > div:last-child > button:last-child {
     color: #c2d5ff;
+}
+
+/* Send button text */ .button.send:hover > div > span {
+    color: #bb9af7 !important;
+}
+
+/* Send button icon */ .button.send:hover > div > div {
+    background: #bb9af7 !important;
 }
 
 /* Editor V1 controls containers */ .conversation-controls > div {
