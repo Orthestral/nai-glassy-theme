@@ -182,7 +182,9 @@
 /* Instruct input (Before) */ .conversation .editor2 .ProseMirror > p[source="10"]::before,
 /* Opposing prompt textarea */ .infobar > div:last-child  > div:last-child > div:last-child > div > div > div:last-child > button,
 /* Story searchbar buttons */ .tts-controls > div:nth-last-child(2) button,
-/* Lorebook searchbar buttons */ .lorebook-sidebar > div:nth-child(2) > div:first-child > div:last-child > button {
+/* Lorebook searchbar buttons */ .lorebook-sidebar > div:nth-child(2) > div:first-child > div:last-child > button,
+/* Mobile dashboard background */ .conversation > div:nth-child(4) > div:nth-child(2),
+/* Mobile dashboard menu button */ .conversation > div:nth-child(4) > div:first-child > div:first-child > div:first-child > div:first-child > div:first-child > button {
     background: transparent !important;
     background-color: #00000000 !important;
 }
