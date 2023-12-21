@@ -169,6 +169,7 @@
 /* Editor hints */ .comment-tip > div,
 /* Editor V1 controls containers */ .conversation-controls-container > div:nth-child(3) > div:first-child,
 /* Editor V2 controls containers */ .conversation-controls-container > div:nth-child(2) > div:first-child,
+/* Editor V2 mobile secondary controls container */ .conversation-controls-content.conversation-input-container > div:nth-child(3),
 .conversation > div:nth-child(3) > div:last-child,
 /* Whole Dashboard BG */ .conversation > div:last-child,
 /* Dashboard */ .conversation > div:last-child > div:last-child,
