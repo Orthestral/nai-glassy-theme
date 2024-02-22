@@ -29,7 +29,7 @@
 /* Infobar Author's note token count */ .an-card > div:last-child > div > button,
 /* Image generator AI settings and "Generate" buttons */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:last-child button,
 /* Image gen edit/inpaint save button */ #__next > div:last-child > div:nth-child(3) > div > div:first-child > div:last-child > button:nth-child(2),
-/* Image gen paste import buttons */.line-background-overlay > div:last-child > div:last-child > button,
+/* Image gen import buttons */.line-background-overlay > div:nth-child(2) > div:last-child > button,
 /* Lorebook update category defaults button */ .lorebook-content > div > div:last-child > div > div:last-child > button,
 /* Lorebook category subcontext reset to default button */ .lorebook-content > div > div:last-child > div > div:last-child > div:nth-last-child(3) > button:last-child,
 /* Import scenario button */ .modal-large > div > div:last-child > div > button
@@ -125,7 +125,7 @@
 /* Image generator AI settings and "Generate" buttons */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:last-child button,
 /* Text adventure V2 switch button */ .conversation-input button,
 /* Image gen edit/inpaint save button */ #__next > div:last-child > div:nth-child(3) > div > div:first-child > div:last-child > button:nth-child(2),
-/* Image gen paste import buttons */.line-background-overlay > div:last-child > div:last-child > button,
+/* Image gen import buttons */.line-background-overlay > div:nth-child(2) > div:last-child > button,
 /* Lorebook update category defaults button */ .lorebook-content > div > div:last-child > div > div:last-child > button,
 /* Lorebook category subcontext reset to default button */ .lorebook-content > div > div:last-child > div > div:last-child > div:nth-last-child(3) > button:last-child,
 /* Import scenario button */ .modal-large > div > div:last-child > div > button
