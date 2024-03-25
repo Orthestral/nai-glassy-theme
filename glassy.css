@@ -156,7 +156,6 @@
 /* All textareas except for ??? */ textarea:not(.lorebook-inserted-text),
 /* Menubar story entry */ .sidebar-story-card,
 /* Modal overlay */ .modal-overlay,
-/* Module trainer modal */ .module-trainer,
 /* Menubar story status */ .sidebar-story-card > div:nth-child(2),
 /* Menubar shelf/stories header */ .menubar > div:nth-child(3),
 /* Menubar open settings button */ .menubar > div:first-child > div:nth-child(2) > button,
