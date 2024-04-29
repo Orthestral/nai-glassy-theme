@@ -28,10 +28,12 @@
 /* Infobar Memory token count */ .memory-card > div:last-child > div > button,
 /* Infobar Author's note token count */ .an-card > div:last-child > div > button,
 /* Image generator AI settings and "Generate" buttons */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:last-child button,
+/* Image gen mobile "Generate" button */ #__next > div:last-child > div:nth-child(4) > div:last-child > div:last-child > div:last-child > div:nth-child(2) button,
 /* Image gen edit/inpaint save button */ #__next > div:last-child > div:nth-child(3) > div > div:first-child > div:last-child > button:nth-child(2),
 /* Image gen import buttons */.line-background-overlay > div:nth-child(2) > div:last-child > button,
 /* Lorebook update category defaults button */ .lorebook-content > div > div:last-child > div > div:last-child > button,
 /* Lorebook category subcontext reset to default button */ .lorebook-content > div > div:last-child > div > div:last-child > div:nth-last-child(3) > button:last-child,
+/* Lorebook item placement reset to default button */ .lorebook-content > div > div:last-child > div > div:last-child > div:nth-last-child(4) > button:last-child,
 /* Import scenario button */ .modal-large > div > div:last-child > div > button
 ),
 .ProseMirror-focused,
@@ -124,11 +126,13 @@
 /* Statistics modal destructive buttons */ .modal > div:first-child > div:nth-child(3) > div:first-child > div:nth-child(2) > div:nth-child(3) > div:first-child > div:nth-child(4) > button,
 /* Lorebook delete entry button */ .lorebook-sidebar > div:nth-child(3) > div > div > div > div > button:first-child,
 /* Image generator AI settings and "Generate" buttons */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:last-child button,
+/* Image gen mobile "Generate" button */ #__next > div:last-child > div:nth-child(4) > div:last-child > div:last-child > div:last-child > div:nth-child(2) button,
 /* Text adventure V2 switch button */ .conversation-input button,
 /* Image gen edit/inpaint save button */ #__next > div:last-child > div:nth-child(3) > div > div:first-child > div:last-child > button:nth-child(2),
 /* Image gen import buttons */.line-background-overlay > div:nth-child(2) > div:last-child > button,
 /* Lorebook update category defaults button */ .lorebook-content > div > div:last-child > div > div:last-child > button,
 /* Lorebook category subcontext reset to default button */ .lorebook-content > div > div:last-child > div > div:last-child > div:nth-last-child(3) > button:last-child,
+/* Lorebook item placement reset to default button */ .lorebook-content > div > div:last-child > div > div:last-child > div:nth-last-child(4) > button:last-child,
 /* Import scenario button */ .modal-large > div > div:last-child > div > button
 ):hover {
     background-color: #0a0a1077;
