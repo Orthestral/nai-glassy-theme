@@ -277,7 +277,8 @@
 /* Text adventure V2 switch button */ .conversation-input button,
 /* Infobar export "To File" button icon */ .infobar-export > div > button:first-child > div,
 /* Regular modal close buttons */ .modal-header .modal-close,
-/* Compact modal close buttons */ .modal-compact > div > div:first-child > button {
+/* Compact modal close buttons */ .modal-compact > div > div:first-child > button,
+/* TTS settings buttons */ .settings-content > div:nth-child(2) > div:nth-child(8) button > div {
     background-color: #c2d5ff !important;
 }
 
