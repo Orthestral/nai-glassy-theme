@@ -270,7 +270,8 @@
 /* Delete story button */ .infobar > div:last-child > div:last-child > div:first-child > div > div > div:nth-last-child(2) > div:last-child > button,
 /* Delete story confirmation button */ .modal > div:nth-child(2) > div:first-child > button:nth-last-child(2):not(button[aria-label="back"]),
 /* Delete shelf button */ .modal > div:first-child > div:nth-child(8) > button:nth-child(3),
-/* Statistics modal destructive buttons */ .modal > div:first-child > div:nth-child(3) > div:first-child > div:nth-child(2) > div:nth-child(3) > div:first-child > div:nth-child(4) > button {
+/* Statistics modal destructive buttons */ .modal > div:first-child > div:nth-child(3) > div:first-child > div:nth-child(2) > div:nth-child(3) > div:first-child > div:nth-child(4) > button,
+/* Delete shelf button (right click) */ .modal-compact > div:first-child > div:nth-child(3) > div:first-child > button:nth-child(2) {
     background-color: #FFA5A5 !important;
 }
 
