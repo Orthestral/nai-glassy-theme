@@ -7,6 +7,15 @@
     background-image: url(https://github.com/Orthestral/nai-glassy-theme/blob/main/media/glassybg.png?raw=true);
     background-size: cover;
     background-position: center;
+    padding: 0 5px;
+}
+
+/* Menubar container */ #app > div:nth-child(2):not(.conversation) {
+    right: 5px;
+}
+
+/* Infobar container */ #app > div:nth-child(5) {
+    left: 5px;
 }
 
 /* Left sidebar */ .menubar,
@@ -111,8 +120,12 @@
 /* Conversation/story panel */ .conversation {
     max-width: 60em !important;
     max-height: 90% !important;
-    bottom: 50px;
-    padding: 10px 15px 15px 15px !important;
+    margin: auto !important;
+    padding: 5px 15px 15px 15px !important;
+}
+
+/* Hidden conversation title */ .conversation-title > div[style="height: 40px;"] {
+    height: 0 !important;
 }
 
 /* Story scrollbar */ ::-webkit-scrollbar-thumb,
