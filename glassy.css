@@ -1,6 +1,7 @@
 /* All elements */ * {
     border: none !important;
     outline: none !important;
+    color-scheme: dark;
 }
 
 /* Background */ #app {
@@ -8,6 +9,10 @@
     background-size: cover;
     background-position: center;
     padding: 0 5px;
+}
+
+/* Chromium scrollbar */ ::-webkit-scrollbar-thumb {
+    background-color: #ffffff2a !important
 }
 
 /* Menubar container */ #app > div:nth-child(2):not(.conversation) {
@@ -128,7 +133,6 @@
     height: 0 !important;
 }
 
-/* Story scrollbar */ ::-webkit-scrollbar-thumb,
 /* Infobar "Story" nav button */ .infobar > div:nth-child(2) > div:first-child > div,
 /* Menubar header */ .menubar > div:first-child,
 /* Select bg */ .select > div:nth-child(3),
