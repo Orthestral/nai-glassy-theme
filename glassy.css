@@ -79,7 +79,8 @@
 /* Lorebook category subcontext reset to default button */ .lorebook-content > div > div:last-child > div > div:last-child > div:nth-last-child(3) > button:last-child,
 /* Lorebook item placement reset to default button */ .lorebook-content > div > div:last-child > div > div:last-child > div:nth-last-child(4) > button:last-child,
 /* Import scenario button */ .modal-large > div > div:last-child > div > button,
-/* Llama 3 license accept button */ .modal-large > div > div:last-child > button:nth-child(2)
+/* Llama 3 license accept button */ .modal-large > div > div:last-child > button:nth-child(2),
+/* Image gen V4 character positions */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(7) button
 ),
 .ProseMirror-focused,
 .lorebook-inserted-text,
@@ -193,7 +194,8 @@
 /* Lorebook category subcontext reset to default button */ .lorebook-content > div > div:last-child > div > div:last-child > div:nth-last-child(3) > button:last-child,
 /* Lorebook item placement reset to default button */ .lorebook-content > div > div:last-child > div > div:last-child > div:nth-last-child(4) > button:last-child,
 /* Import scenario button */ .modal-large > div > div:last-child > div > button,
-/* Llama 3 license accept button */ .modal-large > div > div:last-child > button:nth-child(2)
+/* Llama 3 license accept button */ .modal-large > div > div:last-child > button:nth-child(2),
+/* Image gen V4 character positions */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(7) button
 ):hover,
 /* Sidebar categories (hovered) */ .story-list > div:not(sidebar-story-card):hover {
     background-color: #0a0a1077;
