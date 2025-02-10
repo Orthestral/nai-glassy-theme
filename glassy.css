@@ -26,10 +26,7 @@
 /* Left sidebar */ .menubar,
 /* Right sidebar */ .infobar,
 /* Conversation/story panel */ .conversation,
-/* Module trainer modal */ .module-trainer,
-/* Image gen img2img buttons except for */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:last-child > div button:not(
-/* Image gen img2img collapse button */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:last-child > div > div:first-child > div:nth-child(2) > button
-) {
+/* Module trainer modal */ .module-trainer {
     background-color: #0c0c1088 !important;
     backdrop-filter: blur(20px);
 }
@@ -80,7 +77,8 @@
 /* Lorebook item placement reset to default button */ .lorebook-content > div > div:last-child > div > div:last-child > div:nth-last-child(4) > button:last-child,
 /* Import scenario button */ .modal-large > div > div:last-child > div > button,
 /* Llama 3 license accept button */ .modal-large > div > div:last-child > button:nth-child(2),
-/* Image gen V4 character positions */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(7) button
+/* Image gen V4 character positions */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(7) button,
+/* Image gen V4 character positions (mobile) */ #__next > div:last-child > div:nth-child(4) > div:last-child > div:nth-child(3) > div:nth-child(2) > div > div > div > div:nth-child(7) button
 ),
 .ProseMirror-focused,
 .lorebook-inserted-text,
@@ -103,10 +101,6 @@
 /* Settings sidebar */ div.settings-sidebar {
     background-color: #0a0a1055;
     border-radius: 5px;
-}
-
-/* img2img action buttons */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:last-child > div > div:last-child > div button {
-    border-radius: 5px !important;
 }
 
 /* New scenario cards */ .scenario-card {
@@ -195,7 +189,8 @@
 /* Lorebook item placement reset to default button */ .lorebook-content > div > div:last-child > div > div:last-child > div:nth-last-child(4) > button:last-child,
 /* Import scenario button */ .modal-large > div > div:last-child > div > button,
 /* Llama 3 license accept button */ .modal-large > div > div:last-child > button:nth-child(2),
-/* Image gen V4 character positions */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(7) button
+/* Image gen V4 character positions */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(7) button,
+/* Image gen V4 character positions (mobile) */ #__next > div:last-child > div:nth-child(4) > div:last-child > div:nth-child(3) > div:nth-child(2) > div > div > div > div:nth-child(7) button
 ):hover,
 /* Sidebar categories (hovered) */ .story-list > div:not(sidebar-story-card):hover {
     background-color: #0a0a1077;
@@ -221,7 +216,6 @@
 /* Infobar settings changed dialog background */ .infobar > div:last-child > div:last-child > div:last-child > div > div > div:first-child > div:nth-child(2),
 /* Dashboard "Read More" button */ .conversation > div:last-child > div:first-child > div:first-child > div:last-child > div > button:last-child,
 /* Dashboard New Story and Import buttons */ .conversation > div:last-child > div:last-child > div > div:first-child > div:last-child > div > button,
-/* Image gen img2img collapse button */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:last-child > div > div:first-child > div:nth-child(2) > button,
 /* All textareas except for */ textarea:not(
 /* All textareas in modals */ .modal textarea,
 /* ??? */ .lorebook-inserted-text,
