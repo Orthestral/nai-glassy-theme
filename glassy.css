@@ -78,7 +78,8 @@
 /* Import scenario button */ .modal-large > div > div:last-child > div > button,
 /* Llama 3 license accept button */ .modal-large > div > div:last-child > button:nth-child(2),
 /* Image gen V4 character positions */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(7) button,
-/* Image gen V4 character positions (mobile) */ #__next > div:last-child > div:nth-child(4) > div:last-child > div:nth-child(3) > div:nth-child(2) > div > div > div > div:nth-child(7) button
+/* Image gen V4 character positions (mobile) */ #__next > div:last-child > div:nth-child(4) > div:last-child > div:nth-child(3) > div:nth-child(2) > div > div > div > div:nth-child(7) button,
+/* Shelf right click menu */ body > div[style*="visibility: visible"] button
 ),
 .ProseMirror-focused,
 .lorebook-inserted-text,
@@ -98,7 +99,8 @@
 /* Tokenizer output */ .modal-compact > div:first-child > div:nth-child(3) > div:first-child > div:nth-child(8),
 /* Tokenizer input */ .modal-compact > div > div:last-child > div > textarea,
 /* Story settings tag background */ .story-metadata-modal > div:last-child,
-/* Settings sidebar */ div.settings-sidebar {
+/* Settings sidebar */ div.settings-sidebar,
+/* Shelf right click menu */ body > div[style*="visibility: visible"] {
     background-color: #0a0a1055;
     border-radius: 5px;
 }
