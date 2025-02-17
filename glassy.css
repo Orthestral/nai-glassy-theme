@@ -103,7 +103,8 @@
     border-radius: 5px;
 }
 
-/* New scenario cards */ .scenario-card {
+/* New scenario cards */ .scenario-card,
+/* Lorebook display name */ input[placeholder="Display Name"] {
     background-color: #0a0a1055 !important;
     border-radius: 5px;
 }
