@@ -66,19 +66,19 @@
 /* Infobar add phrase bias */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(2) > div:last-child > div:first-child > div:last-child > div:first-child > button,
 /* Infobar Memory token count */ .memory-card > div:last-child > div > button,
 /* Infobar Author's note token count */ .an-card > div:last-child > div > button,
-/* Image generator AI settings and "Generate" buttons */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:last-child button,
-/* Image gen mobile "Generate" button */ #__next > div:last-child > div:nth-child(4) > div:last-child > div:last-child > div:last-child > div:nth-child(2) button,
-/* Image gen edit/inpaint save button */ #__next > div:last-child > div:nth-child(3) > div > div:first-child > div:last-child > button:nth-child(2),
+/* Image generator AI settings and "Generate" buttons */ #__next > div:last-child > div:nth-child(4) > div > div:first-child > div:first-child > div:last-child button,
+/* Image gen mobile "Generate" button */ #__next > div:last-child > div:nth-child(4) > div > div:first-child > div:last-child > div:last-child > div:last-child > div button,
+/* Image gen edit/inpaint save button */ #__next > div:last-child > div:nth-child(4) > div > div:first-child > div:first-child > div:last-child > button:nth-child(2),
 /* Image gen import buttons */ .line-background-overlay > div:nth-child(2) > div:last-child > button,
-/* Image gen director tools transform button */ #__next > div:nth-child(2) > div:nth-child(3) > div:nth-child(3) > div:nth-child(3) > div > div:last-child > div:nth-child(3) > button,
-/* Image gen mobile director tools transform button */ #__next > div:nth-child(2) > div:nth-child(3) > div:nth-child(3) > div:nth-child(4) > div:last-child > div:last-child > div > div:nth-child(2) > button,
+/* Image gen director tools transform button */ #__next > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) > div:nth-child(3) > div:nth-child(3) > div > div:last-child > div:nth-child(3) > button,
+/* Image gen mobile director tools transform button */ #__next > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) > div:nth-child(3) > div:last-child > div:last-child > div > div > div:nth-child(2) > button,
 /* Lorebook update category defaults button */ .lorebook-content > div > div:last-child > div > div:last-child > button,
 /* Lorebook category subcontext reset to default button */ .lorebook-content > div > div:last-child > div > div:last-child > div:nth-last-child(3) > button:last-child,
 /* Lorebook item placement reset to default button */ .lorebook-content > div > div:last-child > div > div:last-child > div:nth-last-child(4) > button:last-child,
 /* Import scenario button */ .modal-large > div > div:last-child > div > button,
 /* Llama 3 license accept button */ .modal-large > div > div:last-child > button:nth-child(2),
-/* Image gen V4 character positions */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(7) button,
-/* Image gen V4 character positions (mobile) */ #__next > div:last-child > div:nth-child(4) > div:last-child > div:nth-child(3) > div:nth-child(2) > div > div > div > div:nth-child(7) button,
+/* Image gen V4 character positions */ #__next > div:last-child > div:nth-child(4) > div > div:first-child > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(7) button,
+/* Image gen V4 character positions (mobile) */ #__next > div:last-child > div:nth-child(4) > div:last-child > div:first-child > div:last-child > div:nth-child(3) > div:nth-child(2) > div > div > div > div:nth-child(7) button,
 /* Shelf right click menu */ body > div[style*="visibility: visible"] button
 ),
 .ProseMirror-focused,
@@ -180,20 +180,20 @@
 /* All buttons except for the following (hovered) */ button:not(
 /* Statistics modal destructive buttons */ .modal > div:first-child > div:nth-child(3) > div:first-child > div:nth-child(2) > div:nth-child(3) > div:first-child > div:nth-child(4) > button,
 /* Lorebook delete entry button */ .lorebook-sidebar > div:nth-child(3) > div > div > div > div > button:first-child,
-/* Image generator AI settings and "Generate" buttons */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:last-child button,
-/* Image gen mobile "Generate" button */ #__next > div:last-child > div:nth-child(4) > div:last-child > div:last-child > div:last-child > div:nth-child(2) button,
+/* Image generator AI settings and "Generate" buttons */ #__next > div:last-child > div:nth-child(4) > div > div:first-child > div:first-child > div:last-child button,
+/* Image gen mobile "Generate" button */ #__next > div:last-child > div:nth-child(4) > div > div:first-child > div:last-child > div:last-child > div:last-child > div button,
 /* Text adventure V2 switch button */ .conversation-input button,
-/* Image gen edit/inpaint save button */ #__next > div:last-child > div:nth-child(3) > div > div:first-child > div:last-child > button:nth-child(2),
+/* Image gen edit/inpaint save button */ #__next > div:last-child > div:nth-child(4) > div > div:first-child > div:first-child > div:last-child > button:nth-child(2),
 /* Image gen import buttons */.line-background-overlay > div:nth-child(2) > div:last-child > button,
-/* Image gen director tools transform button */ #__next > div:nth-child(2) > div:nth-child(3) > div:nth-child(3) > div:nth-child(3) > div > div:last-child > div:nth-child(3) > button,
-/* Image gen mobile director tools transform button */ #__next > div:nth-child(2) > div:nth-child(3) > div:nth-child(3) > div:nth-child(4) > div:last-child > div:last-child > div > div:nth-child(2) > button,
+/* Image gen director tools transform button */ #__next > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) > div:nth-child(3) > div:nth-child(3) > div > div:last-child > div:nth-child(3) > button,
+/* Image gen mobile director tools transform button */ #__next > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) > div:nth-child(3) > div:last-child > div:last-child > div > button,
 /* Lorebook update category defaults button */ .lorebook-content > div > div:last-child > div > div:last-child > button,
 /* Lorebook category subcontext reset to default button */ .lorebook-content > div > div:last-child > div > div:last-child > div:nth-last-child(3) > button:last-child,
 /* Lorebook item placement reset to default button */ .lorebook-content > div > div:last-child > div > div:last-child > div:nth-last-child(4) > button:last-child,
 /* Import scenario button */ .modal-large > div > div:last-child > div > button,
 /* Llama 3 license accept button */ .modal-large > div > div:last-child > button:nth-child(2),
-/* Image gen V4 character positions */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(7) button,
-/* Image gen V4 character positions (mobile) */ #__next > div:last-child > div:nth-child(4) > div:last-child > div:nth-child(3) > div:nth-child(2) > div > div > div > div:nth-child(7) button
+/* Image gen V4 character positions */ #__next > div:last-child > div:nth-child(4) > div > div:first-child > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(7) button,
+/* Image gen V4 character positions (mobile) */ #__next > div:last-child > div:nth-child(4) > div:last-child > div:first-child > div:last-child > div:nth-child(3) > div:nth-child(2) > div > div > div > div:nth-child(7) button
 ):hover,
 /* Sidebar categories (hovered) */ .story-list > div:not(sidebar-story-card):hover {
     background-color: #0a0a1077;
@@ -203,7 +203,6 @@
 /* All inputs except for */ input:not(
 /* All inputs in modals */ .modal input,
 /* All sliders */ .slider,
-/* Image gen expanded seed input */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:last-child > div > div > div:last-child > div:first-child input,
 /* Lorebook searchbar */ .lorebook-sidebar > div:nth-child(2) > div:first-child > div:nth-child(3) > input
 ),
 /* Menubar account dropdown */ .menubar > div:first-child > div:nth-child(2) > button,
@@ -245,11 +244,6 @@
 /* Whole Dashboard BG */ .conversation > div:last-child,
 /* Dashboard */ .conversation > div:last-child > div:last-child,
 /* Text adventure V2 controls */ .conversation-controls,
-/* Image gen img2img control buttons container (inactive) */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:last-child > div > div:nth-child(2) > div,
-/* Image gen img2img control buttons container (active) */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:last-child > div > div:first-child > div:nth-child(2) > div,
-/* Image gen img2img action button containers */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:last-child > div > div:last-child > div,
-/* Image gen img2img inpaint button container */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:last-child > div > div:nth-child(2) > div:last-child > div,
-/* Image gen resolution swap button */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:last-child > div > div:nth-child(2) > div:last-child > button,
 /* Instruct input (Before) */ .conversation .editor2 .ProseMirror > p[source="10"]::before,
 /* Opposing prompt textarea */ .infobar > div:last-child  > div:last-child > div:last-child > div > div > div:last-child > button,
 /* Story searchbar buttons */ .tts-controls > div:nth-last-child(2) button,
@@ -284,8 +278,6 @@
 }
 
 /* Settings nav buttons */ .settings-sidebar > div > button,
-/* Image gen image amount buttons */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:last-child > div > div:last-child button,
-/* img2img action buttons */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:last-child > div > div:last-child > div,
 /* Ephemeral context entries */ .modal-compact > div:first-child > div:nth-child(3) > div:first-child > div:nth-child(6) > div {
     margin: 2px;
 }
