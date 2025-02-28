@@ -15,11 +15,11 @@
     background-color: #ffffff2a !important
 }
 
-/* Menubar container */ #app > div:nth-child(2):not(.conversation) {
+/* Menubar container */ #app > div:first-child > div:nth-child(2) > div:nth-child(2):not(.conversation) {
     right: 5px;
 }
 
-/* Infobar container */ #app > div:nth-child(5) {
+/* Infobar container */ #app > div:first-child > div:nth-child(2) > div:nth-child(5) {
     left: 5px;
 }
 
