@@ -15,7 +15,7 @@
     background-color: #ffffff2a !important
 }
 
-/* Menubar container */ #app > div:first-child > div:nth-child(2) > div:nth-child(2),
+/* Menubar container */ #app > div:first-child > div:nth-child(2) > div:nth-child(2):not(.conversation),
 /* Menubar container (mobile)*/ #app > div:first-child > div:nth-child(2) > div:nth-child(3):not(.conversation) {
     left: -5px;
 }
@@ -25,7 +25,8 @@
     right: -5px;
 }
 
-/* Mobile menubar fade */ #app > div:first-child > div:nth-child(2) > div:nth-child(2)[style*="opacity: 0.7"] {
+/* Mobile menubar fade */ #app > div:first-child > div:nth-child(2) > div:nth-child(2)[style*="opacity: 0.7"],
+/* Mobile menubar fade (dashboard) */ #app > div:first-child > div:nth-child(2) > div:first-child[style*="opacity: 0.7"] {
     left: 5px;
 }
 
