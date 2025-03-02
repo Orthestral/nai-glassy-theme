@@ -15,13 +15,24 @@
     background-color: #ffffff2a !important
 }
 
-/* Menubar container */ #app > div:first-child > div:nth-child(2) > div:nth-child(2):not(.conversation) {
-    right: 5px;
+/* Menubar container */ #app > div:first-child > div:nth-child(2) > div:nth-child(2),
+/* Menubar container (mobile)*/ #app > div:first-child > div:nth-child(2) > div:nth-child(3):not(.conversation) {
+    left: -5px;
 }
 
-/* Infobar container */ #app > div:first-child > div:nth-child(2) > div:nth-child(5) {
+/* Infobar container */ #app > div:first-child > div:nth-child(2) > div:nth-child(5):not(.infobar-toggler),
+/* Infobar container (mobile) */ #app > div:first-child > div:nth-child(2) > div:nth-child(6) {
+    right: -5px;
+}
+
+/* Mobile menubar fade */ #app > div:first-child > div:nth-child(2) > div:nth-child(2)[style*="opacity: 0.7"] {
     left: 5px;
 }
+
+/* Mobile infobar fade */ #app > div:first-child > div:nth-child(2) > div:nth-child(5)[style*="opacity: 0.7"] {
+    left: -5px;
+}
+
 
 /* Left sidebar */ .menubar,
 /* Right sidebar */ .infobar,
