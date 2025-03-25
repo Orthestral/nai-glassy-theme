@@ -1,4 +1,6 @@
-/* All elements */ * {
+/* All elements except for */ *:not(
+/* Activated lorebook keys in editor */ .conversation .ProseMirror .link
+) {
     border: none !important;
     outline: none !important;
     color-scheme: dark;
