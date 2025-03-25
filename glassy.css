@@ -1,9 +1,13 @@
 /* All elements except for */ *:not(
 /* Activated lorebook keys in editor */ .conversation .ProseMirror .link
 ) {
-    border: none !important;
-    outline: none !important;
+    border: none;
+    outline: none;
     color-scheme: dark;
+}
+
+/* Inline border for hint */ .comment-tip > div {
+    border: none !important;
 }
 
 /* Background */ #app {
