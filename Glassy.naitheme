@@ -31,7 +31,10 @@
     "textPrompt": "#c7a8ff",
     "textUser": "#f7db9c",
     "textEdit": "#ff859b",
-    "textAI": "#c2d5ff"
+    "textAI": "#c2d5ff",
+    "lowIntensityColor": "#7aa2f7",
+    "midIntensityColor": "#73daca",
+    "highIntensityColor": "#f7768e"
   },
   "breakpoints": {
     "mobile": "1200px",
