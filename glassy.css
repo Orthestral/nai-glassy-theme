@@ -106,21 +106,21 @@
 /* Infobar add phrase bias */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(2) > div:last-child > div:first-child > div:last-child > div:first-child > button,
 /* Infobar Memory token count */ .memory-card > div:last-child > div > button,
 /* Infobar Author's note token count */ .an-card > div:last-child > div > button,
-/* Image generator AI settings and "Generate" buttons */ #__next > div:last-child > div:nth-child(4) > div > div:first-child > div:first-child > div:last-child button,
-/* Image gen mobile "Generate" button */ #__next > div:last-child > div:nth-child(4) > div > div:first-child > div:last-child > div:last-child > div:last-child > div button,
-/* Image gen edit/inpaint save button */ #__next > div:last-child > div:nth-child(4) > div > div:first-child > div:first-child > div:last-child > button:nth-child(2),
+/* Image generator AI settings and "Generate" buttons */ .image-gen-main > div:first-child > div:first-child > div:last-child button,
+/* Image gen mobile "Generate" button */ .image-gen-main > div:first-child > div:last-child > div:last-child > div:last-child > div button,
+/* Image gen edit/inpaint save button */ .image-gen-canvas > div:nth-child(2) > div:first-child > div:last-child > button:nth-child(2),
 /* Image gen import buttons */ .line-background-overlay > div:nth-child(2) > div:last-child > button,
-/* Image gen director tools transform button */ #__next > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) > div:nth-child(3) > div:nth-child(3) > div > div:last-child > div:nth-child(3) > button,
-/* Image gen mobile director tools transform button */ #__next > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) > div:nth-child(3) > div:last-child > div:last-child > div > div > div:nth-child(2) > button,
+/* Image gen director tools transform button */ .image-gen-tools > div:nth-child(3) > div:nth-child(3) > div > div:last-child > div:nth-child(3) > button,
+/* Image gen mobile director tools transform button */ .image-gen-tools > div:nth-child(3) > div:nth-child(4) > div:last-child > div > div > div:nth-child(2) > button,
 /* Lorebook update category defaults button */ .lorebook-content > div > div:last-child > div > div:last-child > button,
 /* Lorebook category subcontext reset to default button */ .lorebook-content > div > div:last-child > div > div:last-child > div:nth-last-child(3) > button:last-child,
 /* Lorebook item placement reset to default button */ .lorebook-content > div > div:last-child > div > div:last-child > div:nth-last-child(4) > button:last-child,
 /* Import scenario button */ .modal-large > div > div:last-child > div > button,
 /* Llama 3 license accept button */ .modal-large > div > div:last-child > button:nth-child(2),
-/* Image gen V4 character positions */ #__next > div:last-child > div:nth-child(4) > div > div:first-child > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(7) button,
-/* Image gen V4 character positions (mobile) */ #__next > div:last-child > div:nth-child(4) > div:last-child > div:first-child > div:last-child > div:nth-child(3) > div:nth-child(2) > div > div > div > div:nth-child(7) button,
+/* Image gen V4 character positions */ .character-prompt-input > div:last-child > div:first-child button,
 /* Shelf right click menu */ body > div[style*="visibility: visible"] button
 ),
+/* Certain nav buttons */ .submenu-item,
 .ProseMirror-focused,
 .lorebook-inserted-text,
 /* Infobar phrase biases */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(2) > div:last-child > div:first-child > div:nth-child(3),
@@ -133,8 +133,6 @@
 /* Infobar author's note textarea */ .an-card > div:last-child > div,
 .conversation-heading a,
 /* Hypebot container */ .comment-container,
-/* Image gen resolution input */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:last-child > div > div:nth-child(2) > div:last-child,
-/* Image gen expanded seed input */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:last-child > div > div > div:last-child > div:first-child input,
 /* Instruct input */ .conversation .editor2 .ProseMirror > p[source="10"],
 /* Tokenizer output */ .modal-compact > div:first-child > div:nth-child(3) > div:first-child > div:nth-child(8),
 /* Tokenizer input */ .modal-compact > div > div:last-child > div > textarea,
@@ -199,43 +197,34 @@
 /* Infobar "Story" nav button */ .infobar > div:nth-child(2) > div:first-child > div,
 /* Menubar header */ .menubar > div:first-child,
 /* Select bg */ .select > div:nth-child(3),
-/* Infobar lorebook search */ .lorebook-access-card > div:last-child > div > div > div,
-/* Image gen textareas */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:nth-child(2) > div textarea,
-/* Image gen prompt meter */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(2) > div,
-/* Image gen "Undesired Content" header */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(3),
-/* Image gen UC meter */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(4) > div {
+/* Infobar lorebook search */ .lorebook-access-card > div:last-child > div > div > div
+/* Certain nav buttons */ .submenu-item {
     background-color: #0a0a1055 !important;
     outline: none !important 
 }
 
-/* Image gen "Prompt" header */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:first-child {
-    background-color: #0a0a1055;
-    border-radius: 0 5px;
-}
-
-/* Image gen img2img section */ #__next > div:last-child > div:nth-child(4) > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:last-child {
-    background-color: #0a0a1055;
-    border-radius: 5px 0;
+/* Certain nav buttons (hovered) */ .submenu-item {
+    background-color: #0a0a1077 !important;
 }
 
 /* All buttons except for the following (hovered) */ button:not(
 /* Statistics modal destructive buttons */ .modal > div:first-child > div:nth-child(3) > div:first-child > div:nth-child(2) > div:nth-child(3) > div:first-child > div:nth-child(4) > button,
 /* Lorebook delete entry button */ .lorebook-sidebar > div:nth-child(3) > div > div > div > div > button:first-child,
-/* Image generator AI settings and "Generate" buttons */ #__next > div:last-child > div:nth-child(4) > div > div:first-child > div:first-child > div:last-child button,
-/* Image gen mobile "Generate" button */ #__next > div:last-child > div:nth-child(4) > div > div:first-child > div:last-child > div:last-child > div:last-child > div button,
+/* Image generator AI settings and "Generate" buttons */ .image-gen-main > div:first-child > div:first-child > div:last-child button,
+/* Image gen mobile "Generate" button */ .image-gen-main > div:first-child > div:last-child > div:last-child > div:last-child > div button,
 /* Text adventure V2 switch button */ .conversation-input button,
-/* Image gen edit/inpaint save button */ #__next > div:last-child > div:nth-child(4) > div > div:first-child > div:first-child > div:last-child > button:nth-child(2),
+/* Image gen edit/inpaint save button */ .image-gen-canvas > div:last-child > div:first-child > div:last-child > button:nth-child(2),
 /* Image gen import buttons */.line-background-overlay > div:nth-child(2) > div:last-child > button,
-/* Image gen director tools transform button */ #__next > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) > div:nth-child(3) > div:nth-child(3) > div > div:last-child > div:nth-child(3) > button,
-/* Image gen mobile director tools transform button */ #__next > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) > div:nth-child(3) > div:last-child > div:last-child > div > button,
+/* Image gen director tools transform button */ .image-gen-tools > div:nth-child(3) > div:nth-child(3) > div > div:last-child > div:nth-child(3) > button,
+/* Image gen mobile director tools transform button */ .image-gen-tools > div:nth-child(3) > div:nth-child(4) > div:last-child > div > div > div:nth-child(2) > button,
 /* Lorebook update category defaults button */ .lorebook-content > div > div:last-child > div > div:last-child > button,
 /* Lorebook category subcontext reset to default button */ .lorebook-content > div > div:last-child > div > div:last-child > div:nth-last-child(3) > button:last-child,
 /* Lorebook item placement reset to default button */ .lorebook-content > div > div:last-child > div > div:last-child > div:nth-last-child(4) > button:last-child,
 /* Import scenario button */ .modal-large > div > div:last-child > div > button,
 /* Llama 3 license accept button */ .modal-large > div > div:last-child > button:nth-child(2),
-/* Image gen V4 character positions */ #__next > div:last-child > div:nth-child(4) > div > div:first-child > div:first-child > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(7) button,
-/* Image gen V4 character positions (mobile) */ #__next > div:last-child > div:nth-child(4) > div:last-child > div:first-child > div:last-child > div:nth-child(3) > div:nth-child(2) > div > div > div > div:nth-child(7) button
+/* Image gen V4 character positions */ .character-prompt-input > div:last-child > div:first-child button
 ):hover,
+/* Certain nav buttons */ .submenu-item,
 /* Sidebar categories (hovered) */ .story-list > div:not(sidebar-story-card):hover {
     background-color: #0a0a1077;
     background: #0a0a1077;
