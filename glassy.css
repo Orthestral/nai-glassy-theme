@@ -67,12 +67,14 @@
         background: transparent !important;
         background-color: #00000000 !important;
     }
-    /* Story searchbar */ .tts-controls > div:nth-last-child(2),
-    /* Menubar shelf searchbar */ .menubar > div:nth-child(3) > div:first-child > div:nth-child(3),
-    /* Menubar nav dropdown */ .menubar > div:nth-child(2) {
-        background-color: #0c0c1088;
-        background: #0c0c1088;
-        backdrop-filter: blur(20px)
+    @media DISABLED {
+        /* Story searchbar */ .tts-controls > div:nth-last-child(2),
+        /* Menubar shelf searchbar */ .menubar > div:nth-child(3) > div:first-child > div:nth-child(3),
+        /* Menubar nav dropdown */ .menubar > div:nth-child(2) {
+            background-color: #0c0c1088;
+            background: #0c0c1088;
+            backdrop-filter: blur(20px)
+        }
     }
 }
 
@@ -86,12 +88,14 @@
         background: transparent !important;
         background-color: #00000000 !important;
     }
-    /* Story searchbar */ .tts-controls > div:nth-last-child(2),
-    /* Menubar shelf searchbar */ .menubar > div:nth-child(3) > div:first-child > div:nth-child(3),
-    /* Menubar nav dropdown */ .menubar > div:nth-child(2) {
-        background-color: #0c0c1088;
-        background: #0c0c1088;
-        backdrop-filter: blur(20px)
+    @media DISABLED {
+        /* Story searchbar */ .tts-controls > div:nth-last-child(2),
+        /* Menubar shelf searchbar */ .menubar > div:nth-child(3) > div:first-child > div:nth-child(3),
+        /* Menubar nav dropdown */ .menubar > div:nth-child(2) {
+            background-color: #0c0c1088;
+            background: #0c0c1088;
+            backdrop-filter: blur(20px)
+        }
     }
 }
 
@@ -139,7 +143,7 @@
 /* Story settings tag background */ .story-metadata-modal > div:last-child,
 /* Settings sidebar */ div.settings-sidebar,
 /* Shelf right click menu */ body > div[style*="visibility: visible"],
-/* Menubar nav account info */ .menubar > div:nth-child(2) > div:first-child {
+/* Menubar nav account info */ .menubar > div:nth-child(2) > div > div:first-child {
     background-color: #0a0a1055;
     border-radius: 5px;
 }
