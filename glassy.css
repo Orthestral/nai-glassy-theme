@@ -111,7 +111,7 @@
 /* Infobar Memory token count */ .memory-card > div:last-child > div > button,
 /* Infobar Author's note token count */ .an-card > div:last-child > div > button,
 /* Image generator AI settings and "Generate" buttons */ .image-gen-main > div:first-child > div:first-child > div:last-child button,
-/* Image gen mobile "Generate" button */ .image-gen-main > div:first-child > div:last-child > div:last-child > div:last-child > div button,
+/* Image gen mobile "Generate" button */ .image-gen-main > div:first-child > div:nth-child(2) > div:last-child > div:last-child > div button,
 /* Image gen edit/inpaint save button */ .image-gen-canvas > div:nth-child(2) > div:first-child > div:last-child > button:nth-child(2),
 /* Image gen import buttons */ .line-background-overlay > div:nth-child(2) > div:last-child > button,
 /* Image gen director tools transform button */ .image-gen-tools > div:nth-child(3) > div:nth-child(3) > div > div:last-child > div:nth-child(3) > button,
@@ -128,6 +128,7 @@
 .ProseMirror-focused,
 .lorebook-inserted-text,
 /* Infobar phrase biases */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(2) > div:last-child > div:first-child > div:nth-child(3),
+/* Infobar stop sequence input */ input[placeholder="Type here and hit enter to add a stop sequence"]
 /* Infobar stop sequence input */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(4) > div > div:last-child > div:first-child > div,
 /* Infobar stop sequence entries */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(4) > div > div:last-child > div:first-child > span > div,
 /* Infobar banned tokens */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(3) > div > div:last-child > div:first-child > div > div:nth-child(3),
@@ -143,7 +144,12 @@
 /* Story settings tag background */ .story-metadata-modal > div:last-child,
 /* Settings sidebar */ div.settings-sidebar,
 /* Shelf right click menu */ body > div[style*="visibility: visible"],
-/* Menubar nav account info */ .menubar > div:nth-child(2) > div > div:first-child {
+/* Menubar nav account info */ .menubar > div:nth-child(2) > div > div:first-child,
+/* Writer's Toolbox background */ div[class^="magicwand__MagicWandMenuExpanded"],
+/* Writer's Toolbox custom textarea */ textarea[class^="magicwand__MagicWandTextArea"],
+/* Writer's Toolbox shifter input */ input[class^="magicwand__MagicWandShiftTextInput"],
+/* System prompt textareas */ textarea[class^="contexteditor__MemoryInput"],
+/* Infobar stop sequence input */ input[placeholder="Type here and hit enter to add a stop sequence"] {
     background-color: #0a0a1055;
     border-radius: 5px;
 }
@@ -160,6 +166,7 @@
 /* Text adventure V1 context output side */ .adventureStory::before,
 /* Text adventure V1 controls side */ .conversation-input-container::before,
 /* Text adventure V1 controls container */ .conversation-input-container > div:first-child,
+/* Infobar stop sequence input */ input[placeholder="Type here and hit enter to add a stop sequence"],
 /* Sliders */ .slider {
     background: #0a0a1055 !important;
 }
@@ -201,7 +208,7 @@
 /* Infobar "Story" nav button */ .infobar > div:nth-child(2) > div:first-child > div,
 /* Menubar header */ .menubar > div:first-child,
 /* Select bg */ .select > div:nth-child(3),
-/* Infobar lorebook search */ .lorebook-access-card > div:last-child > div > div > div
+/* Infobar lorebook search */ div[class^="lorebook__LorebookSearch"],
 /* Certain nav buttons */ .submenu-item {
     background-color: #0a0a1055 !important;
     outline: none !important 
@@ -237,7 +244,9 @@
 /* All inputs except for */ input:not(
 /* All inputs in modals */ .modal input,
 /* All sliders */ .slider,
-/* Lorebook searchbar */ .lorebook-sidebar > div:nth-child(2) > div:first-child > div:nth-child(3) > input
+/* Lorebook searchbar */ .lorebook-sidebar > div:nth-child(2) > div:first-child > div:nth-child(3) > input,
+/* Writer's Toolbox shifter input */ input[class^="magicwand__MagicWandShiftTextInput"],
+/* Infobar stop sequence input */ input[placeholder="Type here and hit enter to add a stop sequence"]
 ),
 /* Menubar account dropdown */ .menubar > div:first-child > div:nth-child(2) > button,
 /* Menubar edit story button */ .sidebar-story-card > div:first-child > div:nth-child(3) > div > button,
@@ -255,7 +264,9 @@
 /* All textareas except for */ textarea:not(
 /* All textareas in modals */ .modal textarea,
 /* ??? */ .lorebook-inserted-text,
-/* Tokenizer input */ .modal-compact > div > div:last-child > div > textarea
+/* Tokenizer input */ .modal-compact > div > div:last-child > div > textarea,
+/* Writer's Toolbox custom textarea */ textarea[class^="magicwand__MagicWandTextArea"],
+/* System prompt textareas */ textarea[class^="contexteditor__MemoryInput"]
 ),
 /* Menubar story entry */ .sidebar-story-card,
 /* Modal overlay */ .modal-overlay,
@@ -288,7 +299,8 @@
 /* Changelog title button */ .modal > div:nth-child(2) > div:first-child > button[aria-label="back"],
 /* Story settings tags background */ .story-metadata-modal > div:last-child > div,
 /* Ephemeral context entries */ .modal-compact > div:first-child > div:nth-child(3) > div:first-child > div:nth-child(6) > div,
-/* Menubar nav account info bottom border */ .menubar > div:nth-child(2) > div:nth-child(2) {
+/* Menubar nav account info bottom border */ .menubar > div:nth-child(2) > div:nth-child(2),
+/* System prompt textarea containers */ div[class^="contexteditor__Container"] {
     background: transparent !important;
     background-color: #00000000 !important;
 }
