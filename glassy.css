@@ -373,3 +373,7 @@
 /* Shelf icons stroke */ .svg-color-textMain-20.svg-stroke {
     stroke: #ffffff22;
 }
+
+/* Writer's toolbox paragraph buttons */ button[class*="magicwand__MagicWandButton"] {
+    position: absolute !important;
+}
