@@ -50,6 +50,7 @@
 }
 
 /* Story searchbar */ .tts-controls > div:nth-last-child(2),
+/* Writer's toolbox no bg */ .conversation-container > div:nth-child(5) > div,
 /* Menubar shelf searchbar */ .menubar > div:nth-child(3) > div:first-child > div:nth-child(3) {
     background-color: #191922;
     background: #191922;
@@ -102,9 +103,10 @@
 /* Menubar story entry */ .sidebar-story-card,
 /* Editor V1 input */ .conversation-input-container:not(.conversation-controls-container > div:last-child),
 /* All inputs in modals */ .modal input,
-/* All textareas in modals */ .modal textarea,
-/* All inputs in large modals (for ai module trainer) */ .modal.modal-large input,
-/* All textareas in large modals (for ai module trainer) */ .modal.modal-large textarea,
+/* All textareas in modals except for */ .modal textarea:not(
+/* System prompt textarea container 1 */ .modal-large > div > div:nth-child(2) > div:nth-child(4) > textarea,
+/* System prompt textarea container 2 */ .modal-large > div > div:nth-child(2) > div:nth-child(9) > textarea
+),
 /* All buttons except for the following */ button:not(
 /* Infobar add banned token */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(3) > div > div:last-child > div:first-child > div > div:last-child > div:first-child > button,
 /* Infobar add phrase bias */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(2) > div:last-child > div:first-child > div:last-child > div:first-child > button,
@@ -145,11 +147,9 @@
 /* Settings sidebar */ div.settings-sidebar,
 /* Shelf right click menu */ body > div[style*="visibility: visible"],
 /* Menubar nav account info */ .menubar > div:nth-child(2) > div > div:first-child,
-/* Writer's Toolbox background */ div[class^="magicwand__MagicWandMenuExpanded"],
-/* Writer's Toolbox custom textarea */ textarea[class^="magicwand__MagicWandTextArea"],
-/* Writer's Toolbox shifter input */ input[class^="magicwand__MagicWandShiftTextInput"],
-/* System prompt textareas */ textarea[class^="contexteditor__MemoryInput"],
-/* Infobar stop sequence input */ input[placeholder="Type here and hit enter to add a stop sequence"] {
+/* Infobar stop sequence input */ input[placeholder="Type here and hit enter to add a stop sequence"],
+/* System prompt textarea container 1 */ .modal-large > div > div:nth-child(2) > div:nth-child(4),
+/* System prompt textarea container 2 */ .modal-large > div > div:nth-child(2) > div:nth-child(9) {
     background-color: #0a0a1055;
     border-radius: 5px;
 }
@@ -208,8 +208,8 @@
 /* Infobar "Story" nav button */ .infobar > div:nth-child(2) > div:first-child > div,
 /* Menubar header */ .menubar > div:first-child,
 /* Select bg */ .select > div:nth-child(3),
-/* Infobar lorebook search */ div[class^="lorebook__LorebookSearch"],
-/* Certain nav buttons */ .submenu-item {
+/* Certain nav buttons */ .submenu-item,
+/* Infobar lorebook search */ input[placeholder="Search for an entry"] {
     background-color: #0a0a1055 !important;
     outline: none !important 
 }
@@ -245,8 +245,8 @@
 /* All inputs in modals */ .modal input,
 /* All sliders */ .slider,
 /* Lorebook searchbar */ .lorebook-sidebar > div:nth-child(2) > div:first-child > div:nth-child(3) > input,
-/* Writer's Toolbox shifter input */ input[class^="magicwand__MagicWandShiftTextInput"],
-/* Infobar stop sequence input */ input[placeholder="Type here and hit enter to add a stop sequence"]
+/* Infobar stop sequence input */ input[placeholder="Type here and hit enter to add a stop sequence"],
+/* Infobar lorebook search */ input[placeholder="Search for an entry"]
 ),
 /* Menubar account dropdown */ .menubar > div:first-child > div:nth-child(2) > button,
 /* Menubar edit story button */ .sidebar-story-card > div:first-child > div:nth-child(3) > div > button,
@@ -262,11 +262,12 @@
 /* Dashboard "Read More" button */ .conversation > div:last-child > div:first-child > div:first-child > div:last-child > div > button:last-child,
 /* Dashboard New Story and Import buttons */ .conversation > div:last-child > div:last-child > div > div:first-child > div:last-child > div > button,
 /* All textareas except for */ textarea:not(
-/* All textareas in modals */ .modal textarea,
+/* All textareas in modals except for */ .modal textarea:not(
+/* System prompt textarea container 1 */ .modal-large > div > div:nth-child(2) > div:nth-child(4) > textarea,
+/* System prompt textarea container 2 */ .modal-large > div > div:nth-child(2) > div:nth-child(9) > textarea
+),
 /* ??? */ .lorebook-inserted-text,
-/* Tokenizer input */ .modal-compact > div > div:last-child > div > textarea,
-/* Writer's Toolbox custom textarea */ textarea[class^="magicwand__MagicWandTextArea"],
-/* System prompt textareas */ textarea[class^="contexteditor__MemoryInput"]
+/* Tokenizer input */ .modal-compact > div > div:last-child > div > textarea
 ),
 /* Menubar story entry */ .sidebar-story-card,
 /* Modal overlay */ .modal-overlay,
@@ -299,15 +300,14 @@
 /* Changelog title button */ .modal > div:nth-child(2) > div:first-child > button[aria-label="back"],
 /* Story settings tags background */ .story-metadata-modal > div:last-child > div,
 /* Ephemeral context entries */ .modal-compact > div:first-child > div:nth-child(3) > div:first-child > div:nth-child(6) > div,
-/* Menubar nav account info bottom border */ .menubar > div:nth-child(2) > div:nth-child(2),
-/* System prompt textarea containers */ div[class^="contexteditor__Container"] {
+/* Menubar nav account info bottom border */ .menubar > div:nth-child(2) > div:nth-child(2) {
     background: transparent !important;
     background-color: #00000000 !important;
 }
 
 /* Infobar "Story" nav button */ .infobar > div:nth-child(2) > div:first-child > div:first-child,
 /* Infobar export "To File" button */ .infobar-export > div > button:first-child,
-/* Infobar lorebook search */ .lorebook-access-card > div:last-child > div > div > div {
+/* Infobar lorebook search */ input[placeholder="Search for an entry"] {
     border-radius: 5px 0 0 5px !important;
 }
 
@@ -327,6 +327,10 @@
 /* Settings nav buttons */ .settings-sidebar > div > button,
 /* Ephemeral context entries */ .modal-compact > div:first-child > div:nth-child(3) > div:first-child > div:nth-child(6) > div {
     margin: 2px;
+}
+
+/* Writer's toolbox bg */ .conversation-container > div:nth-child(5) {
+    margin-left: 0px;
 }
 
 /* Settings nav buttons */ .settings-sidebar > div > button {
@@ -374,6 +378,6 @@
     stroke: #ffffff22;
 }
 
-/* Writer's toolbox paragraph buttons */ button[class*="magicwand__MagicWandButton"] {
+/* Writer's toolbox paragraph buttons */ button[data-popper-placement="left-start"] {
     position: absolute !important;
 }
