@@ -300,7 +300,7 @@
 /* Changelog title button */ .modal > div:nth-child(2) > div:first-child > button[aria-label="back"],
 /* Story settings tags background */ .story-metadata-modal > div:last-child > div,
 /* Ephemeral context entries */ .modal-compact > div:first-child > div:nth-child(3) > div:first-child > div:nth-child(6) > div,
-/* Infobar nav container */ .infobar > div:nth-child(2)
+/* Infobar nav container */ .infobar > div:nth-child(2) > div:first-child,
 /* Menubar nav account info bottom border */ .menubar > div:nth-child(2) > div:nth-child(2) {
     background: transparent !important;
     background-color: #00000000 !important;
@@ -319,11 +319,11 @@
 }
 
 
-/* Infobar nav container */ .infobar > div:nth-child(2) {
-    gap: 5px;
+/* Infobar nav container */ .infobar > div:nth-child(2) > div:first-child {
+    gap: 3px;
 }
 
-/* Infobar nav buttons */ .infobar > div:nth-child(2) > div {
+/* Infobar nav buttons */ .infobar > div:nth-child(2) > div:first-child > div {
     height: 40px;
 }
 
