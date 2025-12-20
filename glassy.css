@@ -148,6 +148,7 @@
 /* Shelf right click menu */ body > div[style*="visibility: visible"],
 /* Menubar nav account info */ .menubar > div:nth-child(2) > div > div:first-child,
 /* Infobar stop sequence input */ input[placeholder="Type here and hit enter to add a stop sequence"],
+/* Infobar nav buttons */ .infobar > div:nth-child(2) > div:first-child > div,
 /* System prompt textarea container 1 */ .modal-large > div > div:nth-child(2) > div:nth-child(4),
 /* System prompt textarea container 2 */ .modal-large > div > div:nth-child(2) > div:nth-child(9) {
     background-color: #0a0a1055;
@@ -205,7 +206,6 @@
     height: 0 !important;
 }
 
-/* Infobar "Story" nav button */ .infobar > div:nth-child(2) > div:first-child > div,
 /* Menubar header */ .menubar > div:first-child,
 /* Select bg */ .select > div:nth-child(3),
 /* Certain nav buttons */ .submenu-item,
@@ -300,23 +300,31 @@
 /* Changelog title button */ .modal > div:nth-child(2) > div:first-child > button[aria-label="back"],
 /* Story settings tags background */ .story-metadata-modal > div:last-child > div,
 /* Ephemeral context entries */ .modal-compact > div:first-child > div:nth-child(3) > div:first-child > div:nth-child(6) > div,
+/* Infobar nav container */ .infobar > div:nth-child(2)
 /* Menubar nav account info bottom border */ .menubar > div:nth-child(2) > div:nth-child(2) {
     background: transparent !important;
     background-color: #00000000 !important;
 }
 
-/* Infobar "Story" nav button */ .infobar > div:nth-child(2) > div:first-child > div:first-child,
 /* Infobar export "To File" button */ .infobar-export > div > button:first-child,
 /* Infobar lorebook search */ input[placeholder="Search for an entry"] {
     border-radius: 5px 0 0 5px !important;
 }
 
-/* Infobar "Settings" nav button */ .infobar > div:nth-child(2) > div:first-child > div:last-child,
 /* Infobar delete phrase bias group button */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(2) > div:last-child > div:first-child > div:first-child > div:last-child > button:last-child,
 /* Infobar delete banned token group button */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(3) > div > div:last-child > div:first-child > div > div:first-child > div:last-child > button:last-child,
 /* Infobar export story dropdown button */ .infobar-export > div > button:last-child,
 /* Infobar open lorebook button */ .lorebook-access-card > div:last-child > div > div > button {
     border-radius: 0 5px 5px 0 !important;
+}
+
+
+/* Infobar nav container */ .infobar > div:nth-child(2) {
+    gap: 5px;
+}
+
+/* Infobar nav buttons */ .infobar > div:nth-child(2) > div {
+    height: 40px;
 }
 
 /* Infobar add phrase bias group button */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(2) > div:last-child > div:first-child > div:first-child > div:last-child > button:first-child,
