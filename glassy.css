@@ -149,6 +149,7 @@
 /* Menubar nav account info */ .menubar > div:nth-child(2) > div > div:first-child,
 /* Infobar stop sequence input */ input[placeholder="Type here and hit enter to add a stop sequence"],
 /* Infobar nav buttons */ .infobar > div:nth-child(2) > div:first-child > div,
+/* Custombot response area */ .script-comment-box,
 /* System prompt textarea container 1 */ .modal-large > div > div:nth-child(2) > div:nth-child(4),
 /* System prompt textarea container 2 */ .modal-large > div > div:nth-child(2) > div:nth-child(9) {
     background-color: #0a0a1055;
@@ -209,6 +210,7 @@
 /* Menubar header */ .menubar > div:first-child,
 /* Select bg */ .select > div:nth-child(3),
 /* Certain nav buttons */ .submenu-item,
+/* Custombot response area */ .script-comment-box,
 /* Infobar lorebook search */ input[placeholder="Search for an entry"] {
     background-color: #0a0a1055 !important;
     outline: none !important 
@@ -301,9 +303,19 @@
 /* Story settings tags background */ .story-metadata-modal > div:last-child > div,
 /* Ephemeral context entries */ .modal-compact > div:first-child > div:nth-child(3) > div:first-child > div:nth-child(6) > div,
 /* Infobar nav container */ .infobar > div:nth-child(2) > div:first-child,
+/* Script selection */ .conversation-controls-container > div:nth-last-child(2),
 /* Menubar nav account info bottom border */ .menubar > div:nth-child(2) > div:nth-child(2) {
     background: transparent !important;
     background-color: #00000000 !important;
+}
+
+/* Custombot avatar bg */ .script-comment-avatar {
+    background-color: #00000000 !important;
+}
+
+/* Custombot arrow */ .script-comment-arrow::after {
+    left: 0 !important;
+    border-right: 10px solid #0a0a1055 !important;
 }
 
 /* Infobar export "To File" button */ .infobar-export > div > button:first-child,
