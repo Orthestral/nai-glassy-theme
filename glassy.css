@@ -147,7 +147,7 @@
 /* Infobar memory textarea */ .memory-card > div:last-child > div,
 /* Infobar author's note textarea */ .an-card > div:last-child > div,
 .conversation-heading a,
-/* Hypebot container */ .comment-container,
+/* Hypebot response area */ .comment-box,
 /* Instruct input */ .conversation .editor2 .ProseMirror > p[source="10"],
 /* Tokenizer output */ .modal-compact > div:first-child > div:nth-child(3) > div:first-child > div:nth-child(8),
 /* Tokenizer input */ .modal-compact > div > div:last-child > div > textarea,
@@ -214,6 +214,7 @@
 /* Menubar header */ .menubar > div:first-child,
 /* Select bg */ .select > div:nth-child(3),
 /* Certain nav buttons */ .submenu-item,
+/* Hypebot response area */ .comment-box,
 /* Custombot response area */ .script-comment-box,
 /* Infobar lorebook search */ input[placeholder="Search for an entry"] {
     background-color: #0a0a1055 !important;
@@ -328,6 +329,7 @@
     background-color: #00000000 !important;
 }
 
+/* Hypebot arrow */ .comment-arrow::after,
 /* Custombot arrow */ .script-comment-arrow::after {
     left: 0 !important;
     border-right: 10px solid #0a0a1055 !important;
@@ -362,6 +364,11 @@
 /* Settings nav buttons */ .settings-sidebar > div > button,
 /* Ephemeral context entries */ .modal-compact > div:first-child > div:nth-child(3) > div:first-child > div:nth-child(6) > div {
     margin: 2px;
+}
+
+/* Hypebot avatar */ .comment-avatar-box,
+/* Custombot avatar */ .script-comment-avatar-box {
+    margin-right: 2px;
 }
 
 /* Writer's toolbox bg */ .conversation-container > div:nth-child(5) {
