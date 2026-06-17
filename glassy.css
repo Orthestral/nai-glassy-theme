@@ -130,7 +130,8 @@
 /* Statistics modal destructive buttons */ .modal > div:first-child > div:nth-child(3) > div:first-child > div:nth-child(2) > div:nth-child(3) > div:first-child > div:nth-child(4) > button,
 /* Delete shelf button (right click) */ .modal-compact > div:first-child > div:nth-child(3) > div:first-child > button:nth-child(2),
 /* Text adventure switch button */ .conversation-input button,
-/* Compact modal close buttons */ .modal-compact > div > div:first-child > button
+/* Compact modal close buttons */ .modal-compact > div > div:first-child > button,
+/* Send button (hovered) */ .button.send:hover
 ),
 /* Certain nav buttons */ .submenu-item,
 .ProseMirror-focused,
@@ -246,7 +247,7 @@
 /* Delete shelf button (right click) */ .modal-compact > div:first-child > div:nth-child(3) > div:first-child > button:nth-child(2),
 /* Text adventure switch button */ .conversation-input button,
 /* Compact modal close buttons */ .modal-compact > div > div:first-child > button,
-/* Send button text */ .button.send
+/* Send button */ .button.send
 ):hover,
 /* Certain nav buttons */ .submenu-item,
 /* Sidebar categories (hovered) */ .story-list > div:not(sidebar-story-card):hover {
