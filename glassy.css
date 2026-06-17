@@ -101,7 +101,6 @@
 }
 
 /* Menubar story entry */ .sidebar-story-card,
-/* Editor V1 input */ .conversation-input-container:not(.conversation-controls-container > div:last-child),
 /* All inputs in modals */ .modal input,
 /* All textareas in modals except for */ .modal textarea:not(
 /* System prompt textarea container 1 */ .modal-large > div > div:nth-child(2) > div:nth-child(4) > textarea,
@@ -124,12 +123,20 @@
 /* Import scenario button */ .modal-large > div > div:last-child > div > button,
 /* Llama 3 license accept button */ .modal-large > div > div:last-child > button:nth-child(2),
 /* Image gen V4 character positions */ .character-prompt-input > div:last-child > div:first-child button,
-/* Shelf right click menu */ body > div[style*="visibility: visible"] button
+/* Shelf right click menu */ body > div[style*="visibility: visible"] button,
+/* Delete story button */ .infobar > div:last-child > div:last-child > div:first-child > div > div > div:nth-last-child(2) > div:last-child > button,
+/* Delete story confirmation button */ .modal > div:nth-child(2) > div:first-child > button:nth-last-child(2):not(button[aria-label="back"]),
+/* Delete shelf button */ .modal > div:first-child > div:nth-child(8) > button:nth-child(3),
+/* Statistics modal destructive buttons */ .modal > div:first-child > div:nth-child(3) > div:first-child > div:nth-child(2) > div:nth-child(3) > div:first-child > div:nth-child(4) > button,
+/* Delete shelf button (right click) */ .modal-compact > div:first-child > div:nth-child(3) > div:first-child > button:nth-child(2),
+/* Text adventure switch button */ .conversation-input button,
+/* Compact modal close buttons */ .modal-compact > div > div:first-child > button
 ),
 /* Certain nav buttons */ .submenu-item,
 .ProseMirror-focused,
 .lorebook-inserted-text,
 /* Infobar phrase biases */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(2) > div:last-child > div:first-child > div:nth-child(3),
+/* Infobar Xialong biases */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div > div > div:nth-child(3) > div:last-child > div > div:last-child,
 /* Infobar stop sequence input */ input[placeholder="Type here and hit enter to add a stop sequence"]
 /* Infobar stop sequence input */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(4) > div > div:last-child > div:first-child > div,
 /* Infobar stop sequence entries */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(4) > div > div:last-child > div:first-child > span > div,
@@ -151,7 +158,8 @@
 /* Infobar nav buttons */ .infobar > div:nth-child(2) > div:first-child > div,
 /* Custombot response area */ .script-comment-box,
 /* System prompt textarea container 1 */ .modal-large > div > div:nth-child(2) > div:nth-child(4),
-/* System prompt textarea container 2 */ .modal-large > div > div:nth-child(2) > div:nth-child(9) {
+/* System prompt textarea container 2 */ .modal-large > div > div:nth-child(2) > div:nth-child(9),
+/* Infobar genre/tags */ .infobar > div:last-child > div:last-child > div:first-child > div > div > div:nth-child(5) > div:nth-child(3) > div > div > div:last-child > div {
     background-color: #0a0a1055;
     border-radius: 5px;
 }
@@ -162,12 +170,7 @@
     border-radius: 5px;
 }
 
-/* Text adventure V2 input */ .conversation-input,
-/* Text adventure V1 context input */ .adventureInput,
-/* Text adventure V1 context input side */ .adventureInput::before,
-/* Text adventure V1 context output side */ .adventureStory::before,
-/* Text adventure V1 controls side */ .conversation-input-container::before,
-/* Text adventure V1 controls container */ .conversation-input-container > div:first-child,
+/* Text adventure input */ .conversation-input,
 /* Infobar stop sequence input */ input[placeholder="Type here and hit enter to add a stop sequence"],
 /* Sliders */ .slider {
     background: #0a0a1055 !important;
@@ -225,7 +228,7 @@
 /* Lorebook delete entry button */ .lorebook-sidebar > div:nth-child(3) > div > div > div > div > button:first-child,
 /* Image generator AI settings and "Generate" buttons */ .image-gen-main > div:first-child > div:first-child > div:last-child button,
 /* Image gen mobile "Generate" button */ .image-gen-main > div:first-child > div:last-child > div:last-child > div:last-child > div button,
-/* Text adventure V2 switch button */ .conversation-input button,
+/* Text adventure switch button */ .conversation-input button,
 /* Image gen edit/inpaint save button */ .image-gen-canvas > div:last-child > div:first-child > div:last-child > button:nth-child(2),
 /* Image gen import buttons */.line-background-overlay > div:nth-child(2) > div:last-child > button,
 /* Image gen director tools transform button */ .image-gen-tools > div:nth-child(3) > div:nth-child(3) > div > div:last-child > div:nth-child(3) > button,
@@ -235,7 +238,15 @@
 /* Lorebook item placement reset to default button */ .lorebook-content > div > div:last-child > div > div:last-child > div:nth-last-child(4) > button:last-child,
 /* Import scenario button */ .modal-large > div > div:last-child > div > button,
 /* Llama 3 license accept button */ .modal-large > div > div:last-child > button:nth-child(2),
-/* Image gen V4 character positions */ .character-prompt-input > div:last-child > div:first-child button
+/* Image gen V4 character positions */ .character-prompt-input > div:last-child > div:first-child button,
+/* Delete story button */ .infobar > div:last-child > div:last-child > div:first-child > div > div > div:nth-last-child(2) > div:last-child > button,
+/* Delete story confirmation button */ .modal > div:nth-child(2) > div:first-child > button:nth-last-child(2):not(button[aria-label="back"]),
+/* Delete shelf button */ .modal > div:first-child > div:nth-child(8) > button:nth-child(3),
+/* Statistics modal destructive buttons */ .modal > div:first-child > div:nth-child(3) > div:first-child > div:nth-child(2) > div:nth-child(3) > div:first-child > div:nth-child(4) > button,
+/* Delete shelf button (right click) */ .modal-compact > div:first-child > div:nth-child(3) > div:first-child > button:nth-child(2),
+/* Text adventure switch button */ .conversation-input button,
+/* Compact modal close buttons */ .modal-compact > div > div:first-child > button,
+/* Send button text */ .button.send
 ):hover,
 /* Certain nav buttons */ .submenu-item,
 /* Sidebar categories (hovered) */ .story-list > div:not(sidebar-story-card):hover {
@@ -257,10 +268,10 @@
 /* Infobar add stop sequence */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(4) > div > div:last-child > div:first-child > div > button,
 /* Modal close button */ .modal-close,
 /* Menubar NovelAI logo */ .menubar > div:first-child > div:first-child > button,
-/* Infobar inport/export config presets */ .infobar > div:last-child > div:last-child > div:last-child > div > div > div:first-child > div:first-child > div:first-child > div:last-child > button,
-/* Infobar Generation Options toggle */ .infobar > div:last-child > div:last-child > div:last-child > div > div > div:nth-child(3) button,
-/* Infobar generation sliders dropdown toggle */ .infobar > div:last-child > div:last-child > div:last-child > div > div button:not(.infobar > div:last-child > div:last-child > div:last-child > div > div > div:first-child button),
-/* Infobar settings changed dialog background */ .infobar > div:last-child > div:last-child > div:last-child > div > div > div:first-child > div:nth-child(2),
+/* Infobar inport/export config presets */ .infobar > div:last-child > div:last-child > div:nth-child(3) > div > div > div:first-child > div:first-child > div:first-child > div:last-child > button,
+/* Infobar Generation Options toggle */ .infobar > div:last-child > div:last-child > div:nth-child(3) > div > div > div:nth-child(3) button,
+/* Infobar generation sliders dropdown toggle */ .infobar > div:last-child > div:last-child > div:nth-child(3) > div > div button:not(div:nth-child(3) > div > div > div:first-child button),
+/* Infobar settings changed dialog background */ .infobar > div:last-child > div:last-child > div:nth-child(3) > div > div > div:first-child > div:nth-child(2),
 /* Dashboard "Read More" button */ .conversation > div:last-child > div:first-child > div:first-child > div:last-child > div > button:last-child,
 /* Dashboard New Story and Import buttons */ .conversation > div:last-child > div:last-child > div > div:first-child > div:last-child > div > button,
 /* All textareas except for */ textarea:not(
@@ -285,13 +296,13 @@
 /* Infobar add banned token */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(3) > div > div:last-child > div:first-child > div > div:last-child > div:first-child > button,
 /* Infobar add phrase bias */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(2) > div:last-child > div:first-child > div:last-child > div:first-child > button,
 /* Editor hints */ .comment-tip > div,
-/* Editor V1 controls containers */ .conversation-controls-container > div:nth-child(3) > div:first-child,
-/* Editor V2 controls containers */ .conversation-controls-container > div:nth-child(2) > div:first-child,
-/* Editor V2 mobile secondary controls container */ .conversation-controls-content.conversation-input-container > div:nth-child(3),
+/* Editor controls containers */ .conversation-controls-container > div:nth-child(2) > div:first-child,
+/* Editor controls container container */ .conversation-input-container > div:first-child,
+/* Editor mobile secondary controls container */ .conversation-controls-content.conversation-input-container > div:nth-child(3),
 .conversation > div:nth-child(3) > div:last-child,
 /* Whole Dashboard BG */ .conversation > div:last-child,
 /* Dashboard */ .conversation > div:last-child > div:last-child,
-/* Text adventure V2 controls */ .conversation-controls,
+/* Text adventure controls */ .conversation-controls,
 /* Instruct input (Before) */ .conversation .editor2 .ProseMirror > p[source="10"]::before,
 /* Opposing prompt textarea */ .infobar > div:last-child  > div:last-child > div:last-child > div > div > div:last-child > button,
 /* Story searchbar buttons */ .tts-controls > div:nth-last-child(2) button,
@@ -304,7 +315,10 @@
 /* Ephemeral context entries */ .modal-compact > div:first-child > div:nth-child(3) > div:first-child > div:nth-child(6) > div,
 /* Infobar nav container */ .infobar > div:nth-child(2) > div:first-child,
 /* Script selection */ .conversation-controls-container > div:nth-last-child(2),
-/* Menubar nav account info bottom border */ .menubar > div:nth-child(2) > div:nth-child(2) {
+/* Menubar nav account info bottom border */ .menubar > div:nth-child(2) > div:nth-child(2),
+/* Infobar genre/tags buttons */ .infobar > div:last-child > div:last-child > div:first-child > div > div > div:nth-child(5) > div:nth-child(3) > div > div > div:last-child > div button,
+/* Infobar script nav 1 */ .infobar > div:last-child > div:last-child > div:nth-child(4) > div > div > div:nth-last-child(2),
+/* Infobar script nav 2 */ .infobar > div:last-child > div:last-child > div:nth-child(4) > div > div > div:nth-last-child(3) {
     background: transparent !important;
     background-color: #00000000 !important;
 }
@@ -356,19 +370,8 @@
 /* Settings nav buttons */ .settings-sidebar > div > button {
     margin-right: 20px;
 }
-
-/* Delete story button */ .infobar > div:last-child > div:last-child > div:first-child > div > div > div:nth-last-child(2) > div:last-child > button,
-/* Delete story confirmation button */ .modal > div:nth-child(2) > div:first-child > button:nth-last-child(2):not(button[aria-label="back"]),
-/* Delete shelf button */ .modal > div:first-child > div:nth-child(8) > button:nth-child(3),
-/* Statistics modal destructive buttons */ .modal > div:first-child > div:nth-child(3) > div:first-child > div:nth-child(2) > div:nth-child(3) > div:first-child > div:nth-child(4) > button,
-/* Delete shelf button (right click) */ .modal-compact > div:first-child > div:nth-child(3) > div:first-child > button:nth-child(2) {
-    background-color: #FFA5A5 !important;
-}
-
-/* Text adventure V2 switch button */ .conversation-input button,
 /* Infobar export "To File" button icon */ .infobar-export > div > button:first-child > div,
 /* Regular modal close buttons */ .modal-header .modal-close,
-/* Compact modal close buttons */ .modal-compact > div > div:first-child > button,
 /* TTS settings buttons */ .settings-content > div:nth-child(2) > div:nth-child(8) button > div {
     background-color: #c2d5ff !important;
 }
@@ -376,18 +379,6 @@
 /* Infobar export "To File" button text */ .infobar-export > div > button:first-child,
 /* Story scenario fill placeholders/start button */ .modal > div:first-child > div:first-child > div:last-child > div:last-child > button:last-child {
     color: #c2d5ff;
-}
-
-/* Send button text */ .button.send:hover > div > span {
-    color: #bb9af7 !important;
-}
-
-/* Send button icon */ .button.send:hover > div > div {
-    background: #bb9af7 !important;
-}
-
-/* Editor V1 controls containers */ .conversation-controls > div {
-    height: 80%;
 }
 
 /* Shelf icons */ .svg-color-bg1.svg-fill {
