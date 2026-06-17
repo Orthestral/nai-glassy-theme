@@ -1,3 +1,10 @@
+:root {
+    --bg-color-base: #0c0c1088;
+    --bg-color-elements: #0a0a1055;
+    --bg-color-hover: #0a0a1077;
+}
+
+
 /* All elements except for */ *:not(
 /* Activated lorebook keys in editor */ .conversation .ProseMirror .link
 ) {
@@ -43,9 +50,8 @@
 
 /* Left sidebar */ .menubar,
 /* Right sidebar */ .infobar,
-/* Conversation/story panel */ .conversation,
-/* Module trainer modal */ .module-trainer {
-    background-color: #0c0c1088 !important;
+/* Conversation/story panel */ .conversation {
+    background-color: var(--bg-color-base) !important;
     backdrop-filter: blur(20px);
 }
 
@@ -61,7 +67,7 @@
 /* Firefox-specific code */
 @-moz-document url-prefix() {
     /* Modals*/ .modal {
-        background-color: #0c0c1088 !important;
+        background-color: var(--bg-color-base) !important;
         backdrop-filter: blur(20px);
     }
     /* Various modals background */ .modal > div {
@@ -72,8 +78,8 @@
         /* Story searchbar */ .tts-controls > div:nth-last-child(2),
         /* Menubar shelf searchbar */ .menubar > div:nth-child(3) > div:first-child > div:nth-child(3),
         /* Menubar nav dropdown */ .menubar > div:nth-child(2) {
-            background-color: #0c0c1088;
-            background: #0c0c1088;
+            background-color: var(--bg-color-base);
+            background: var(--bg-color-base);
             backdrop-filter: blur(20px)
         }
     }
@@ -82,7 +88,7 @@
 /* Webkit-specific code */
 @supports (background: -webkit-named-image(i)) {
     /* Modals*/ .modal {
-        background-color: #0c0c1088 !important;
+        background-color: var(--bg-color-base) !important;
         backdrop-filter: blur(20px);
     }
     /* Various modals background */ .modal > div {
@@ -93,14 +99,13 @@
         /* Story searchbar */ .tts-controls > div:nth-last-child(2),
         /* Menubar shelf searchbar */ .menubar > div:nth-child(3) > div:first-child > div:nth-child(3),
         /* Menubar nav dropdown */ .menubar > div:nth-child(2) {
-            background-color: #0c0c1088;
-            background: #0c0c1088;
+            background-color: var(--bg-color-base);
+            background: var(--bg-color-base);
             backdrop-filter: blur(20px)
         }
     }
 }
 
-/* Menubar story entry */ .sidebar-story-card,
 /* All inputs in modals */ .modal input,
 /* All textareas in modals except for */ .modal textarea:not(
 /* System prompt textarea container 1 */ .modal-large > div > div:nth-child(2) > div:nth-child(4) > textarea,
@@ -133,7 +138,10 @@
 /* Compact modal close buttons */ .modal-compact > div > div:first-child > button,
 /* Send button (hovered) */ .button.send:hover,
 /* Script save button */ .modal-large > div:first-child > div:nth-child(2) > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(2) > button:nth-child(6),
-/* Script permissions save button */ .modal-large > div:first-child > div:nth-child(2) > div:nth-child(2) > div:first-child > div:nth-child(3) > div:first-child > div:first-child > div:first-child > div:nth-child(2) > button
+/* Script permissions save button */ .modal-large > div:first-child > div:nth-child(2) > div:nth-child(2) > div:first-child > div:nth-child(3) > div:first-child > div:first-child > div:first-child > div:nth-child(2) > button,
+/* Infobar export "To File" button */ .infobar-export > div > button:first-child,
+/* Story scenario fill placeholders/start button */ .modal > div:first-child > div:first-child > div:last-child > div:last-child > button:last-child,
+/* Modal close button */ .modal-close
 ),
 /* Certain nav buttons */ .submenu-item,
 .ProseMirror-focused,
@@ -163,24 +171,20 @@
 /* System prompt textarea container 1 */ .modal-large > div > div:nth-child(2) > div:nth-child(4),
 /* System prompt textarea container 2 */ .modal-large > div > div:nth-child(2) > div:nth-child(9),
 /* Infobar genre/tags */ .infobar > div:last-child > div:last-child > div:first-child > div > div > div:nth-child(5) > div:nth-child(3) > div > div > div:last-child > div {
-    background-color: #0a0a1055;
+    background-color: var(--bg-color-elements);
     border-radius: 5px;
 }
 
 /* New scenario cards */ .scenario-card,
 /* Lorebook display name */ input[placeholder="Display Name"] {
-    background-color: #0a0a1055 !important;
+    background-color: var(--bg-color-elements) !important;
     border-radius: 5px;
 }
 
 /* Text adventure input */ .conversation-input,
 /* Infobar stop sequence input */ input[placeholder="Type here and hit enter to add a stop sequence"],
 /* Sliders */ .slider {
-    background: #0a0a1055 !important;
-}
-
-/* Module trainer modal */ .module-trainer {
-    background: rgb(21, 21, 21) !important;
+    background: var(--bg-color-elements) !important;
 }
 
 /* Hypebot container */ .comment-container div {
@@ -219,22 +223,23 @@
 /* Hypebot response area */ .comment-box,
 /* Custombot response area */ .script-comment-box,
 /* Infobar lorebook search */ input[placeholder="Search for an entry"] {
-    background-color: #0a0a1055 !important;
+    background-color: var(--bg-color-elements) !important;
     outline: none !important 
 }
 
 /* Certain nav buttons (hovered) */ .submenu-item {
-    background-color: #0a0a1077 !important;
+    background-color: var(--bg-color-hover) !important;
 }
 
 /* All buttons except for the following (hovered) */ button:not(
-/* Statistics modal destructive buttons */ .modal > div:first-child > div:nth-child(3) > div:first-child > div:nth-child(2) > div:nth-child(3) > div:first-child > div:nth-child(4) > button,
-/* Lorebook delete entry button */ .lorebook-sidebar > div:nth-child(3) > div > div > div > div > button:first-child,
+/* Infobar add banned token */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(3) > div > div:last-child > div:first-child > div > div:last-child > div:first-child > button,
+/* Infobar add phrase bias */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(2) > div:last-child > div:first-child > div:last-child > div:first-child > button,
+/* Infobar Memory token count */ .memory-card > div:last-child > div > button,
+/* Infobar Author's note token count */ .an-card > div:last-child > div > button,
 /* Image generator AI settings and "Generate" buttons */ .image-gen-main > div:first-child > div:first-child > div:last-child button,
-/* Image gen mobile "Generate" button */ .image-gen-main > div:first-child > div:last-child > div:last-child > div:last-child > div button,
-/* Text adventure switch button */ .conversation-input button,
-/* Image gen edit/inpaint save button */ .image-gen-canvas > div:last-child > div:first-child > div:last-child > button:nth-child(2),
-/* Image gen import buttons */.line-background-overlay > div:nth-child(2) > div:last-child > button,
+/* Image gen mobile "Generate" button */ .image-gen-main > div:first-child > div:nth-child(2) > div:last-child > div:last-child > div button,
+/* Image gen edit/inpaint save button */ .image-gen-canvas > div:nth-child(2) > div:first-child > div:last-child > button:nth-child(2),
+/* Image gen import buttons */ .line-background-overlay > div:nth-child(2) > div:last-child > button,
 /* Image gen director tools transform button */ .image-gen-tools > div:nth-child(3) > div:nth-child(3) > div > div:last-child > div:nth-child(3) > button,
 /* Image gen mobile director tools transform button */ .image-gen-tools > div:nth-child(3) > div:nth-child(4) > div:last-child > div > div > div:nth-child(2) > button,
 /* Lorebook update category defaults button */ .lorebook-content > div > div:last-child > div > div:last-child > button,
@@ -243,6 +248,7 @@
 /* Import scenario button */ .modal-large > div > div:last-child > div > button,
 /* Llama 3 license accept button */ .modal-large > div > div:last-child > button:nth-child(2),
 /* Image gen V4 character positions */ .character-prompt-input > div:last-child > div:first-child button,
+/* Shelf right click menu */ body > div[style*="visibility: visible"] button,
 /* Delete story button */ .infobar > div:last-child > div:last-child > div:first-child > div > div > div:nth-last-child(2) > div:last-child > button,
 /* Delete story confirmation button */ .modal > div:nth-child(2) > div:first-child > button:nth-last-child(2):not(button[aria-label="back"]),
 /* Delete shelf button */ .modal > div:first-child > div:nth-child(8) > button:nth-child(3),
@@ -250,14 +256,17 @@
 /* Delete shelf button (right click) */ .modal-compact > div:first-child > div:nth-child(3) > div:first-child > button:nth-child(2),
 /* Text adventure switch button */ .conversation-input button,
 /* Compact modal close buttons */ .modal-compact > div > div:first-child > button,
-/* Send button */ .button.send,
+/* Send button (hovered) */ .button.send:hover,
 /* Script save button */ .modal-large > div:first-child > div:nth-child(2) > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(2) > button:nth-child(6),
-/* Script permissions save button */ .modal-large > div:first-child > div:nth-child(2) > div:nth-child(2) > div:first-child > div:nth-child(3) > div:first-child > div:first-child > div:first-child > div:nth-child(2) > button
+/* Script permissions save button */ .modal-large > div:first-child > div:nth-child(2) > div:nth-child(2) > div:first-child > div:nth-child(3) > div:first-child > div:first-child > div:first-child > div:nth-child(2) > button,
+/* Infobar export "To File" button */ .infobar-export > div > button:first-child,
+/* Story scenario fill placeholders/start button */ .modal > div:first-child > div:first-child > div:last-child > div:last-child > button:last-child,
+/* Modal close button */ .modal-close
 ):hover,
 /* Certain nav buttons */ .submenu-item,
-/* Sidebar categories (hovered) */ .story-list > div:not(sidebar-story-card):hover {
-    background-color: #0a0a1077;
-    background: #0a0a1077;
+/* Sidebar categories (hovered) */ .story-list > div:not(.sidebar-story-card):hover {
+    background-color: var(--bg-color-hover);
+    background: var(--bg-color-hover);
 }
 
 /* All inputs except for */ input:not(
@@ -272,7 +281,6 @@
 /* Menubar duplicate story button */ .sidebar-story-card > div:last-child > div:last-child > div > div > button,
 /* Menubar edit shelf button */ .menubar > div:nth-child(3) > div:first-child > div:last-child > button,
 /* Infobar add stop sequence */ .infobar > div:last-child > div:last-child > div:nth-child(2) > div:first-child > div:first-child > div:nth-child(4) > div > div:last-child > div:first-child > div > button,
-/* Modal close button */ .modal-close,
 /* Menubar NovelAI logo */ .menubar > div:first-child > div:first-child > button,
 /* Infobar inport/export config presets */ .infobar > div:last-child > div:last-child > div:nth-child(3) > div > div > div:first-child > div:first-child > div:first-child > div:last-child > button,
 /* Infobar Generation Options toggle */ .infobar > div:last-child > div:last-child > div:nth-child(3) > div > div > div:nth-child(3) button,
@@ -336,7 +344,7 @@
 /* Hypebot arrow */ .comment-arrow::after,
 /* Custombot arrow */ .script-comment-arrow::after {
     left: 0 !important;
-    border-right: 10px solid #0a0a1055 !important;
+    border-right: 10px solid var(--bg-color-elements) !important;
 }
 
 /* Infobar export "To File" button */ .infobar-export > div > button:first-child,
@@ -382,19 +390,9 @@
 /* Settings nav buttons */ .settings-sidebar > div > button {
     margin-right: 20px;
 }
-/* Infobar export "To File" button icon */ .infobar-export > div > button:first-child > div,
-/* Regular modal close buttons */ .modal-header .modal-close,
-/* TTS settings buttons */ .settings-content > div:nth-child(2) > div:nth-child(8) button > div {
-    background-color: #c2d5ff !important;
-}
-
-/* Infobar export "To File" button text */ .infobar-export > div > button:first-child,
-/* Story scenario fill placeholders/start button */ .modal > div:first-child > div:first-child > div:last-child > div:last-child > button:last-child {
-    color: #c2d5ff;
-}
 
 /* Shelf icons */ .svg-color-bg1.svg-fill {
-    fill: #0a0a1077;
+    fill: var(--bg-color-hover);
 }
 
 /* Shelf icons stroke */ .svg-color-textMain-20.svg-stroke {
